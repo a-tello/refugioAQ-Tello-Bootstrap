@@ -1,0 +1,55 @@
+.bg-primary{
+    background-color: #629668 !important;
+}
+
+.btn-primary{
+    background-color: rgb(132, 72, 187);
+    border-color: rgb(132, 72, 187);
+}
+
+.btn-primary:hover{
+    background-color: rgb(79, 29, 125);
+}
+
+.homeIntroductionText-xs{
+    display: none;
+}
+
+
+.navbar-brand img{
+    max-width: 100px;
+}
+
+.carousel-inner{
+    max-height: 500px;
+}
+
+
+
+.separator{
+    height: 1px;
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0);   ;
+}
+
+.sponsorLogo{
+    min-width: 50px;
+    min-height: 50px;
+
+}
+
+
+@media only screen and (max-width: 576px){
+    .sponsorLogo{
+        width: 100%;
+    }
+    .homeIntroductionText{
+        display: none;
+    }
+    .homeIntroductionText-xs{
+        display: block;
+    }
+    footer{
+        text-align: center;
+    }
+}
