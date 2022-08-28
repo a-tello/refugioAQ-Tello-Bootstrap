@@ -2,6 +2,10 @@
     background-color: #629668 !important;
 }
 
+.bg-secondary{
+    background-color: rgb(132, 72, 187)!important;
+}
+
 .btn-primary{
     background-color: rgb(132, 72, 187);
     border-color: rgb(132, 72, 187);
@@ -15,16 +19,21 @@
     display: none;
 }
 
-
 .navbar-brand img{
     max-width: 100px;
+}
+
+.nav-item{
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+.nav-item:hover{
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #bec8cb;;
 }
 
 .carousel-inner{
     max-height: 500px;
 }
-
-
 
 .separator{
     height: 1px;
@@ -32,10 +41,43 @@
     box-shadow: 0 0 5px 0 rgba(0, 0, 0);   ;
 }
 
-.sponsorLogo{
-    min-width: 50px;
-    min-height: 50px;
+.bannerCard{
+    height: 500px;
+    background-image: url("../assets/images/bannerAdoptions-min.jpg");
+    background-size:cover;
+    background-position: center;
+}
 
+.overlayBanner{
+    height: 500px;
+    background: linear-gradient(270deg,rgba(42, 86, 42, 0),rgba(26, 46, 23, 0.4) 80%,#182c18db);
+}
+
+.imgCard{
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.animalCard{
+    border: 0;
+    transition: all .5s;
+}
+
+.animalCard a{
+    text-decoration: none;
+    background-color: rgb(95, 52, 135);
+}
+
+.container-cards:hover .animalCard{
+    filter: blur(1px);
+    opacity: .5;
+} 
+
+.container-cards .animalCard:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+    filter: blur(0px);
 }
 
 
@@ -48,6 +90,9 @@
     }
     .homeIntroductionText-xs{
         display: block;
+    }
+    .container-cards{
+        justify-content: center;
     }
     footer{
         text-align: center;
