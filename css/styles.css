@@ -43,9 +43,8 @@
 
 .bannerCard{
     height: 500px;
-    background-image: url("../assets/images/bannerAdoptions-min.jpg");
+    background: url("../assets/images/bannerAdoptions-min.jpg") center;
     background-size:cover;
-    background-position: center;
 }
 
 .overlayBanner{
