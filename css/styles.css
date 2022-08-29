@@ -13,6 +13,7 @@
 
 .btn-primary:hover{
     background-color: rgb(79, 29, 125);
+    border-color: rgb(132, 72, 187);
 }
 
 .homeIntroductionText-xs{
@@ -90,10 +91,6 @@
     background-color: 50%;
 }
 
-
-
-
-
 .catSelector:hover, .dogSelector:hover{
     transform: scale(1.1, 1.1);
 }
@@ -126,6 +123,11 @@
     }
     .navbar-toggler{
         order: 1;
+    }
+
+    /*Help page*/
+     .helpArticle{
+        flex-direction: column-reverse;
     }
 
 }
