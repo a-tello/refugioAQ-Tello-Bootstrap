@@ -61,6 +61,13 @@
 .overlayBanner{
     height: 500px;
     background: linear-gradient(270deg,rgba(42, 86, 42, 0),rgba(26, 46, 23, 0.4) 80%,#182c18db);
+    background-size:cover;
+}
+
+.bannerCardDonationPage{
+    height: 500px;
+    background: url("../assets/images/bannerDonations-min.jpg") center;
+    background-size:cover;
 }
 
 .imgCard{
