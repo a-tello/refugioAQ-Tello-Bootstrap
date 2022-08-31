@@ -146,6 +146,10 @@
         order: 1;
     }
 
+    .navbar-nav{
+        align-items: center;
+    }
+
     /*Help page*/
     .helpPageBtn{
         align-self: center !important;
