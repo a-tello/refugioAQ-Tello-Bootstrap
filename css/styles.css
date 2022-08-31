@@ -117,6 +117,14 @@
     filter: blur(0px);
 }
 
+/*Help Page*/
+.bannerCardHelpPage{
+    height: 500px;
+    background: url("../assets/images/bannerHelp-min.jpg") center;
+    background-size:cover;
+}
+
+
 @media only screen and (max-width: 992px){
     .donation-button{
         order: 0;
@@ -126,8 +134,8 @@
     }
 
     /*Help page*/
-     .helpArticle{
-        flex-direction: column-reverse;
+    .helpPageBtn{
+        align-self: center !important;
     }
 
 }
