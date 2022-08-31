@@ -117,10 +117,16 @@
     filter: blur(0px);
 }
 
-/*Help Page*/
+/*Banners*/
 .bannerCardHelpPage{
     height: 500px;
     background: url("../assets/images/bannerHelp-min.jpg") center;
+    background-size:cover;
+}
+
+.bannerCardContactPage{
+    height: 500px;
+    background: url("../assets/images/bannerContacto-min.jpg") center;
     background-size:cover;
 }
 
