@@ -30,7 +30,7 @@
 
 .main-nav  li:hover{
     color: #fff;
-    box-shadow: inset 200px 0 0 0 #bec8cb;;
+    box-shadow: inset 200px 0 0 0 #bec8cb;
 }
 
 .animationImg{
@@ -49,6 +49,12 @@
     height: 1px;
     width: 100%;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0);
+}
+
+.footer-nav li:hover{
+    animation-name: levitate ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 /*Adoptions page*/
@@ -124,6 +130,27 @@
     filter: blur(0px);
 }
 
+.socialMedia__link{
+    position: relative;
+}
+
+.socialMedia__link::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    height: 1px;
+    width: 50px;
+    border-radius:	0 0 6px 6px;
+    box-shadow: 0px 5px 6px rgba(0,0,0,.4);
+}
+
+.socialMedia__link img:hover{
+    animation-name: levitate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 /*Banners*/
 .bannerCardHelpPage{
     height: 500px;
@@ -179,4 +206,9 @@
 @keyframes paw_movement{
     20%{transform: rotate(-45deg);}
     40%{transform: rotate(45deg);}
+}
+
+@keyframes levitate{
+    40%, 80%{transform:translateY(0)}
+    20%, 60%{transform:translateY(-10px)}
 }
