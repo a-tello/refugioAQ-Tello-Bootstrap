@@ -1,0 +1,19 @@
+.navbar-brand img{
+    max-width: 100px;
+}
+
+.main-nav  li{
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    &:hover{
+        color: #fff;
+        box-shadow: inset 200px 0 0 0 #bec8cb;
+    }
+}
+
+.animationImg{
+    width: 30px;
+    animation-name: paw_movement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}

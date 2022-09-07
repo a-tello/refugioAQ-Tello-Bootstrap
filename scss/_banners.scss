@@ -1,0 +1,29 @@
+.bannerCard{
+    height: $bannerHeight;
+    background: url("../assets/images/bannerAdoptions-min.jpg") center;
+    background-size:cover;
+}
+
+.overlayBanner{
+    height: $bannerHeight;
+    background: linear-gradient(270deg,rgba(42, 86, 42, 0),rgba(26, 46, 23, 0.4) 80%,#182c18db);
+    background-size:cover;
+}
+
+.bannerCardDonationPage{
+    height: $bannerHeight;
+    background: url("../assets/images/bannerDonations-min.jpg") center;
+    background-size:cover;
+}
+
+.bannerCardHelpPage{
+    height: $bannerHeight;
+    background: url("../assets/images/bannerHelp-min.jpg") center;
+    background-size:cover;
+}
+
+.bannerCardContactPage{
+    height: $bannerHeight;
+    background: url("../assets/images/bannerContacto-min.jpg") center;
+    background-size:cover;
+}

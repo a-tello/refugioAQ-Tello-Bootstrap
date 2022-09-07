@@ -1,214 +1,159 @@
-.bg-primary{
-    background-color: #629668 !important;
-}
+@keyframes paw_movement {
+  20% {
+    transform: rotate(-45deg); }
+  40% {
+    transform: rotate(45deg); } }
 
-.bg-secondary{
-    background-color: rgb(132, 72, 187)!important;
-}
+@keyframes levitate {
+  40%, 80% {
+    transform: translateY(0); }
+  20%, 60% {
+    transform: translateY(-10px); } }
 
-.btn-primary{
-    background-color: rgb(132, 72, 187);
-    border-color: rgb(132, 72, 187);
-}
+.navbar-brand img {
+  max-width: 100px; }
 
-.btn-primary:hover{
-    background-color: rgb(79, 29, 125);
-    border-color: rgb(132, 72, 187);
-}
-
-.homeIntroductionText-xs{
-    display: none;
-}
-
-.navbar-brand img{
-    max-width: 100px;
-}
-
-.main-nav  li{
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
-}
-
-.main-nav  li:hover{
+.main-nav li {
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out; }
+  .main-nav li:hover {
     color: #fff;
-    box-shadow: inset 200px 0 0 0 #bec8cb;
-}
+    box-shadow: inset 200px 0 0 0 #bec8cb; }
 
-.animationImg{
-    width: 30px;
-    animation-name: paw_movement;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 5s;
-}
+.animationImg {
+  width: 30px;
+  animation-name: paw_movement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s; }
 
-.carousel-inner{
-    max-height: 500px;
-}
+.bannerCard {
+  height: 500px;
+  background: url("../assets/images/bannerAdoptions-min.jpg") center;
+  background-size: cover; }
 
-.separator{
-    height: 1px;
-    width: 100%;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0);
-}
+.overlayBanner {
+  height: 500px;
+  background: linear-gradient(270deg, rgba(42, 86, 42, 0), rgba(26, 46, 23, 0.4) 80%, #182c18db);
+  background-size: cover; }
 
-.footer-nav li:hover{
-    animation-name: levitate ;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
+.bannerCardDonationPage {
+  height: 500px;
+  background: url("../assets/images/bannerDonations-min.jpg") center;
+  background-size: cover; }
 
-/*Adoptions page*/
-.bannerCard{
-    height: 500px;
-    background: url("../assets/images/bannerAdoptions-min.jpg") center;
-    background-size:cover;
-}
+.bannerCardHelpPage {
+  height: 500px;
+  background: url("../assets/images/bannerHelp-min.jpg") center;
+  background-size: cover; }
 
-.overlayBanner{
-    height: 500px;
-    background: linear-gradient(270deg,rgba(42, 86, 42, 0),rgba(26, 46, 23, 0.4) 80%,#182c18db);
-    background-size:cover;
-}
+.bannerCardContactPage {
+  height: 500px;
+  background: url("../assets/images/bannerContacto-min.jpg") center;
+  background-size: cover; }
 
-.bannerCardDonationPage{
-    height: 500px;
-    background: url("../assets/images/bannerDonations-min.jpg") center;
-    background-size:cover;
-}
+.footer-nav li:hover {
+  animation-name: levitate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
 
-.imgCard{
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-}
+.bg-primary {
+  background-color: #629668 !important; }
 
+.bg-secondary {
+  background-color: #8448bb !important; }
 
-.catSelector, .dogSelector{
-    border-radius: 50px 1px 50px 1px;
-    width: 90%;
-    height: 300px;
-    background-position:30%;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0);
-    transition: all .5s;
-}
+.btn-primary {
+  background-color: #8448bb;
+  border-color: #8448bb; }
+  .btn-primary:hover {
+    background-color: #4f1d7d;
+    border-color: #8448bb; }
 
-.catSelector{
-    background-image: url("../assets/images/gatos.png");
-}
-.dogSelector{
-    background-image: url("../assets/images/perros.png");
-}
+.homeIntroductionText-xs {
+  display: none; }
 
-.dogSelectorLabel, .catSelectorLabel{
+.carousel-inner {
+  max-height: 500px; }
+
+.separator {
+  height: 1px;
+  width: 100%;
+  box-shadow: 0 0 5px 0 black; }
+
+.imgCard {
+  height: 300px;
+  background-position: center;
+  background-size: cover; }
+
+.catSelector, .dogSelector {
+  border-radius: 50px 1px 50px 1px;
+  width: 90%;
+  height: 300px;
+  background-position: 30%;
+  box-shadow: 0 0 5px 0 black;
+  transition: all .5s; }
+  .catSelector:hover, .dogSelector:hover {
+    transform: scale(1.1, 1.1); }
+  .catSelector .dogSelectorLabel, .catSelector .catSelectorLabel, .dogSelector .dogSelectorLabel, .dogSelector .catSelectorLabel {
     border-radius: 0 0 30px 0;
-    background-color: 50%;
-}
+    background-color: 50%; }
 
-.catSelector:hover, .dogSelector:hover{
-    transform: scale(1.1, 1.1);
-}
+.catSelector {
+  background-image: url("../assets/images/gatos.png"); }
 
+.dogSelector {
+  background-image: url("../assets/images/perros.png"); }
 
-.animalCard{
-    border: 0;
-    transition: all .5s;
-}
+.container-cards:hover .animalCard {
+  filter: blur(1px);
+  opacity: .5; }
 
-.animalCard a{
+.container-cards .animalCard {
+  border: 0;
+  transition: all .5s; }
+  .container-cards .animalCard a {
     text-decoration: none;
-    background-color: rgb(95, 52, 135);
-}
-
-.container-cards:hover .animalCard{
-    filter: blur(1px);
-    opacity: .5;
-} 
-
-.container-cards .animalCard:hover{
+    background-color: #5f3487; }
+  .container-cards .animalCard:hover {
     transform: scale(1.1, 1.1);
     opacity: 1;
-    filter: blur(0px);
-}
+    filter: blur(0px); }
 
-.socialMedia__link{
-    position: relative;
-}
-
-.socialMedia__link::after{
+.socialMedia__link {
+  position: relative; }
+  .socialMedia__link::after {
     content: "";
     position: absolute;
     right: 0;
     bottom: -30px;
     height: 1px;
     width: 50px;
-    border-radius:	0 0 6px 6px;
-    box-shadow: 0px 5px 6px rgba(0,0,0,.4);
-}
-
-.socialMedia__link img:hover{
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4); }
+  .socialMedia__link img:hover {
     animation-name: levitate;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
+    animation-iteration-count: infinite; }
 
-/*Banners*/
-.bannerCardHelpPage{
-    height: 500px;
-    background: url("../assets/images/bannerHelp-min.jpg") center;
-    background-size:cover;
-}
+@media only screen and (max-width: 992px) {
+  .donation-button {
+    order: 0; }
+  .navbar-toggler {
+    order: 1; }
+  .navbar-nav {
+    align-items: center; }
+  /*Help page*/
+  .helpPageBtn {
+    align-self: center !important; } }
 
-.bannerCardContactPage{
-    height: 500px;
-    background: url("../assets/images/bannerContacto-min.jpg") center;
-    background-size:cover;
-}
-
-
-@media only screen and (max-width: 992px){
-    .donation-button{
-        order: 0;
-    }
-    .navbar-toggler{
-        order: 1;
-    }
-
-    .navbar-nav{
-        align-items: center;
-    }
-
-    /*Help page*/
-    .helpPageBtn{
-        align-self: center !important;
-    }
-
-}
-
-@media only screen and (max-width: 576px){
-    .sponsorLogo{
-        width: 100%;
-    }
-    .homeIntroductionText{
-        display: none;
-    }
-    .homeIntroductionText-xs{
-        display: block;
-    }
-    .container-cards{
-        justify-content: center;
-    }
-    footer{
-        text-align: center;
-    }
-}
-
-
-@keyframes paw_movement{
-    20%{transform: rotate(-45deg);}
-    40%{transform: rotate(45deg);}
-}
-
-@keyframes levitate{
-    40%, 80%{transform:translateY(0)}
-    20%, 60%{transform:translateY(-10px)}
-}
+@media only screen and (max-width: 576px) {
+  .sponsorLogo {
+    width: 100%; }
+  .homeIntroductionText {
+    display: none; }
+  .homeIntroductionText-xs {
+    display: block; }
+  .container-cards {
+    justify-content: center; }
+  footer {
+    text-align: center; } }
