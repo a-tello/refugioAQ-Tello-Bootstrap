@@ -1,29 +1,30 @@
-.bannerCard{
+.banner{
     height: $bannerHeight;
-    background: url("../assets/images/bannerAdoptions-min.jpg") center;
     background-size:cover;
+    background-position: center;
 }
 
 .overlayBanner{
-    height: $bannerHeight;
+    @extend .banner;
     background: linear-gradient(270deg,rgba(42, 86, 42, 0),rgba(26, 46, 23, 0.4) 80%,#182c18db);
-    background-size:cover;
+}
+
+.bannerCard{
+    @extend .banner;
+    background-image: url("../assets/images/bannerAdoptions-min.jpg");
 }
 
 .bannerCardDonationPage{
-    height: $bannerHeight;
-    background: url("../assets/images/bannerDonations-min.jpg") center;
-    background-size:cover;
+    @extend .banner;
+    background-image: url("../assets/images/bannerDonations-min.jpg");
 }
 
 .bannerCardHelpPage{
-    height: $bannerHeight;
-    background: url("../assets/images/bannerHelp-min.jpg") center;
-    background-size:cover;
+    @extend .banner;
+    background-image: url("../assets/images/bannerHelp-min.jpg");
 }
 
 .bannerCardContactPage{
-    height: $bannerHeight;
-    background: url("../assets/images/bannerContacto-min.jpg") center;
-    background-size:cover;
+    @extend .banner;
+    background-image: url("../assets/images/bannerContacto-min.jpg");
 }

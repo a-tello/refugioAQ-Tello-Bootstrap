@@ -1,5 +1,5 @@
 .navbar-brand img{
-    max-width: 100px;
+    max-width: map-get($customSizes, "100");;
 }
 
 .main-nav  li{

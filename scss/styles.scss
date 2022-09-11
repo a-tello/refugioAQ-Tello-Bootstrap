@@ -36,33 +36,41 @@
 }
 
 .imgCard{
-    height: 300px;
+    height: map-get($customSizes, "300" );
     background-position: center;
     background-size: cover;
 }
 
 
-.catSelector, .dogSelector{
+/* Estoyt en duda si este mixin es correcto o si debería ser un extend*/
+
+@mixin animalSelector($backgroundImg) {
     border-radius: 50px 1px 50px 1px;
     width: 90%;
-    height: 300px;
+    height: map-get($customSizes, "300" );
     background-position:30%;
     box-shadow: 0 0 5px 0 rgb(0, 0, 0);
     transition: all .5s;
+    background-image: url($backgroundImg);
     &:hover{
         transform: scale(1.1, 1.1);
     }
-    .dogSelectorLabel, .catSelectorLabel{
+}
+
+.catSelector{
+    @include animalSelector("../assets/images/gatos.png");
+    .catSelectorLabel{
         border-radius: 0 0 30px 0;
         background-color: 50%;
     }
 }
 
-.catSelector{
-    background-image: url("../assets/images/gatos.png");
-}
 .dogSelector{
-    background-image: url("../assets/images/perros.png");
+    @include animalSelector("../assets/images/perros.png");
+    .dogSelectorLabel{
+        border-radius: 0 0 30px 0;
+        background-color: 50%;
+    }
 }
 
 .container-cards{
