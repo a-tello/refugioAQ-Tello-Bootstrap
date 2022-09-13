@@ -1,3 +1,11 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+
 @import "utilidades/variables";
 @import "utilidades/mixin";
 
@@ -8,20 +16,27 @@
 @import "disposicion/footer";
 
 
+
+
+
+
+
+
+/*
 .bg-primary{
     background-color: $primaryColor !important;
 }
 
 .bg-secondary{
     background-color: $secondaryColor !important;
-}
+}*/
 
 .btn-primary{
-    background-color: $secondaryColor;
-    border-color: $secondaryColor;
+    background-color: $secondary;
+    border-color: $secondary;
     &:hover{
-        background-color: $darkSecondaryColor;
-        border-color: $secondaryColor;
+        background-color: $darkSecondary;
+        border-color: $secondary;
     }
 }
 
@@ -141,3 +156,4 @@
 }
 
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
