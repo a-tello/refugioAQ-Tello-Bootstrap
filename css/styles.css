@@ -32,7 +32,7 @@
     transform: translateY(-10px);
   }
 }
-.banner, .bannerCardContactPage, .bannerCardHelpPage, .bannerCardDonationPage, .bannerCard, .overlayBanner {
+.banner, .carousel-inner .mainOverlayBanner, .bannerCardContactPage, .bannerCardHelpPage, .bannerCardDonationPage, .bannerCard, .overlayBanner {
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -56,6 +56,30 @@
 
 .bannerCardContactPage {
   background-image: url("../assets/images/bannerContacto-min.jpg");
+}
+
+.carousel-inner {
+  max-height: 700px;
+}
+.carousel-inner .mainOverlayBanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(24, 44, 24, 0.8588235294), rgba(26, 46, 23, 0.4) 80%, rgba(24, 44, 24, 0.8588235294));
+}
+.carousel-inner .carousel-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 700px;
+  -o-object-position: center;
+     object-position: center;
+}
+.carousel-inner .carousel-caption {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  left: 65%;
 }
 
 .navbar-brand img {
@@ -99,21 +123,17 @@
 .bg-secondary{
     background-color: $secondaryColor !important;
 }*/
-.btn-primary {
-  background-color: #8448bb;
-  border-color: #8448bb;
-}
-.btn-primary:hover {
-  background-color: #4f1d7d;
-  border-color: #8448bb;
-}
-
+/*
+.btn-primary{
+    background-color: $secondary;
+    border-color: $secondary;
+    &:hover{
+        background-color: $darkSecondary;
+        border-color: $secondary;
+    }
+}*/
 .homeIntroductionText-xs {
   display: none;
-}
-
-.carousel-inner {
-  max-height: 500px;
 }
 
 .separator {

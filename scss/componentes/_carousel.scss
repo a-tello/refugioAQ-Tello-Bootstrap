@@ -1,0 +1,22 @@
+.carousel-inner{
+    max-height: $bannerHeight + 200px;
+    .mainOverlayBanner{
+        @extend .banner;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(270deg,#182c18db,#1a2e1766 80%,#182c18db);
+    }
+    .carousel-img{
+        object-fit:cover;
+        max-height: 700px;
+        object-position: center;
+    }
+    .carousel-caption{
+        width: 25%;
+        position: absolute;
+        right: 0;
+        top: 30%;
+        left: 65%
+    }
+}
