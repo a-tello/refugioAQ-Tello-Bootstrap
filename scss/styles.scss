@@ -14,29 +14,9 @@
 @import "disposicion/header";
 @import "disposicion/footer";
 
-/*
-.bg-primary{
-    background-color: $primaryColor !important;
-}
-
-.bg-secondary{
-    background-color: $secondaryColor !important;
-}*/
-/*
-.btn-primary{
-    background-color: $secondary;
-    border-color: $secondary;
-    &:hover{
-        background-color: $darkSecondary;
-        border-color: $secondary;
-    }
-}*/
-
 .homeIntroductionText-xs{
     display: none;
 }
-
-
 
 .separator{
     height: 1px;
@@ -44,10 +24,35 @@
     box-shadow: 0 0 5px 0 rgb(0, 0, 0);
 }
 
-.imgCard{
-    height: map-get($customSizes, "300" );
-    background-position: center;
-    background-size: cover;
+.card{
+    background-color: rgba(79, 29, 125,0.25);
+    position: relative;
+    overflow: hidden;
+    .imgCard{
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:none;
+            object-position: center ;
+            transition: all .7s;
+        }
+    }
+    .card-body{
+        position: absolute;
+        width: 100%;
+        bottom: -30%;
+        transition: all .7s;
+        background-color: $darkSecondary;
+    }
+    &:hover{
+        .imgCard img{
+            height: 60%;
+        }
+        .card-body{
+            bottom: 0;
+        }
+    }
 }
 
 .catSelector{
@@ -75,13 +80,11 @@
     }
     .animalCard{
         border: 0;
-        transition: all .5s;
         a{
             text-decoration: none;
             background-color: rgb(95, 52, 135);
         }
         &:hover{
-            transform: scale(1.1, 1.1);
             opacity: 1;
             filter: blur(0px);
         }
