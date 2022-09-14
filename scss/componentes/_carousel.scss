@@ -12,11 +12,16 @@
         max-height: 700px;
         object-position: center;
     }
-    .carousel-caption{
+    /*.carousel-caption{
         width: 25%;
         position: absolute;
         right: 0;
         top: 30%;
         left: 65%
-    }
+    }*/
+}
+
+.active{
+    display: flex;
+    justify-content: center;
 }

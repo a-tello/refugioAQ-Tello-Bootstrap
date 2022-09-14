@@ -15,14 +15,14 @@
     <!-- HEADER -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+          <div class="container">
+            <a class="navbar-brand col-lg-4" href="#">
               <img src="./assets/images/logo-adopciones-quilmes-500x500.png" alt="Logo Adopciones Quilmes">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler col-lg-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse col-lg-4" id="navbarSupportedContent">
               <ul class="navbar-nav main-nav ms-auto mb-2 mb-lg-0 fs-5">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">INICIO</a>
@@ -55,12 +55,15 @@
                 </li>
               </ul>
             </div>
-            <a href="./pages/donaciones.html" class="btn btn-danger btn-lg ms-5">
-              <img src="./assets/images/white_paw.png" alt="Huella animal" class="animationImg"> DONAR</a>
-      </nav>
+            <a href="./pages/donaciones.html col-lg-4" class="btn btn-danger btn-lg ms-5 donation-btn">
+              <img src="./assets/images/white_paw.png" alt="Huella animal" class="animationImg"> DONAR
+            </a>
+          </nav>
+            
+      
     </header>
 
-    <main>
+    <main class="bg-light">
       <!-- CAROUSEL -->
 
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -155,14 +158,14 @@
     
         <section class="container-fluid">
           <h2 class="text-center mt-3 display-5">Nuestros Sponsors</h2>
-          <div class="row justify-content-center flex-wrap">
-            <div class="col text-center m-4" data-aos="zoom-in">
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-4 text-center" data-aos="zoom-in">
               <a href="https://www.purina-latam.com/ar/purina" target="_blank"><img src="assets/images/purina.png" alt="Purina logo" class="sponsorLogo"></a>
             </div>
-            <div class="col text-center m-4" data-aos="zoom-in">
+            <div class="col-md-4 text-center" data-aos="zoom-in">
               <a href="https://www.royalcanin.com/ar" target="_blank"><img src="./assets/images/royal.png" alt="Royal logo" class="sponsorLogo"></a>
             </div>
-            <div class="col text-center m-4" data-aos="zoom-in">
+            <div class="col-md-4 text-center" data-aos="zoom-in">
               <a href="https://www.whiskas.com.ar/" target="_blank"><img src="./assets/images/whiskas.png" alt="Whiskas logo" class="sponsorLogo"></a>
             </div>
           </div>
@@ -172,30 +175,30 @@
     <!-- FOOTER -->
     <footer class="container-fluid">
       <div class="row bg-primary">
-        <div class="col-12 col-md-4">
-          <ul class="nav flex-column">
+        <div class="col-12">
+          <ul class="nav nav-bar justify-content-center fs-5 flex-nowrap" >
             <li class="nav-item">
               <a class="nav-link text-light" href="./pages/contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">FAQs</a>
+              <a class="nav-link text-light" href="./pages/adopciones.html">¿Cómo adoptar?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="./pages/ayuda.html">Ayudanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="./pages/adopciones.html">¿Cómo adoptar?</a>
+              <a class="nav-link text-light" href="#">FAQs</a>
             </li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-end justify-content-center">
-          <ul class="nav footer-nav">
-            <li class="nav-item p-2"><a href="https://twitter.com/AdopcionesQ" target="_blank"><img src="assets/images/twlogo.png" alt="AQ logo twitter"></a></li>
-            <li class="nav-item p-2"><a href="https://www.instagram.com/adopcionesquilmes" target="_blank"><img src="assets/images/iglogo.png" alt="AQ logo instagram"></a></li>
-            <li class="nav-item p-2"><a href="https://es-la.facebook.com/AdopcionesQuilmes/" target="_blank"><img src="assets/images/fblogo.png" alt="AQ logo facebook"></a></li>
+        <div class="col-12  mt-5 d-flex align-items-end justify-content-center">
+          <ul class="nav social-media">
+            <li class="nav-item p-2 mx-2"><a href="https://twitter.com/AdopcionesQ" target="_blank"><img src="assets/images/tw50.png" alt="AQ logo twitter" class="social-media__tw"></a></li>
+            <li class="nav-item p-2 mx-2"><a href="https://www.instagram.com/adopcionesquilmes" target="_blank"><img src="assets/images/ig50.png" alt="AQ logo instagram" class="social-media__ig"></a></li>
+            <li class="nav-item p-2 mx-2"><a href="https://es-la.facebook.com/AdopcionesQuilmes/" target="_blank"><img src="assets/images/fb50.png" alt="AQ logo facebook" class="social-media__fb"></a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 text-light d-flex justify-content-end align-items-end">
+        <div class="col-12 text-light d-flex justify-content-end align-items-end">
           <p>© Adopciones Quilmes 2022</p> 
         </div>
       </div>

@@ -6,7 +6,14 @@ $customSizes:(
     "500": 500px
 );
 
+$socialMediaColors:(
+  "twitter": #13e5f0,
+  "instagram":#ae13f0,
+  "facebook": #1359f0
+);
+
 $primary: #629668;
+$darkPrimary: #39593d;
 $secondary: #8448bb;
 $darkSecondary: #4f1d7d;
 $bannerHeight: map-get($customSizes, "500");
@@ -14,7 +21,7 @@ $bannerHeight: map-get($customSizes, "500");
 
 $custom-theme-colors:map-merge($theme-colors, (
   "primary": $primary,
-  "secondary": $secondary
+  "secondary": $secondary,
 ));
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);

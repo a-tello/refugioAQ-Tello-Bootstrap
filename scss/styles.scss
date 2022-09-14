@@ -112,11 +112,14 @@
 }
 
 @media only screen and (max-width: 992px){
-    .donation-button{
-        order: 0;
+    .donation-btn{
+        margin: 0;
     }
     .navbar-toggler{
         order: 1;
+    }
+    .navbar-collapse{
+        order: 3;
     }
 
     .navbar-nav{
@@ -131,9 +134,9 @@
 }
 
 @media only screen and (max-width: 576px){
-    .sponsorLogo{
+    /*.sponsorLogo{
         width: 100%;
-    }
+    }*/
     .homeIntroductionText{
         display: none;
     }
@@ -143,10 +146,16 @@
     .container-cards{
         justify-content: center;
     }
-    footer{
-        text-align: center;
+
+    footer .nav-bar{
+        flex-flow: column nowrap;
+        align-items: center;
+        
+        .nav-link::after{
+            content: "";
+            padding: 0;
+        }
     }
 }
-
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
