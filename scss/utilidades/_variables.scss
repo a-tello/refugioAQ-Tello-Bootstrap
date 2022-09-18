@@ -1,0 +1,14 @@
+$customSizes:(
+    "100": 100px,
+    "200": 200px,
+    "300": 300px,
+    "400": 400px,
+    "500": 500px
+);
+
+$primaryColor: #629668;
+$secondaryColor: #8448bb;
+$darkSecondaryColor: #4f1d7d;
+$bannerHeight: map-get($customSizes, "500");
+
+

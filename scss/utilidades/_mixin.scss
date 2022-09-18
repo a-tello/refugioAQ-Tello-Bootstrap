@@ -1,0 +1,14 @@
+/* Estoy en duda si este mixin es correcto o si debería ser un extend*/
+
+@mixin animalSelector($backgroundImg) {
+    border-radius: 50px 1px 50px 1px;
+    width: 90%;
+    height: map-get($customSizes, "300" );
+    background-position:30%;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+    transition: all .5s;
+    background-image: url($backgroundImg);
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+}

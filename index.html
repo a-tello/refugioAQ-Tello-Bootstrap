@@ -4,158 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adopciones Quilmes es una organizacion sin fines de lucro encargada de rescatar y dar en adopcion a perros y gatos que no tuvieron la suerte de tener una fmailia">
+    <meta name="keywords" content="Adopciones Quilmes, adopciones de animales en Quilmes, perros, gatos, adopcion de perros, adopcion de gatos">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Adopciones Quilmes</title>
+    <link rel="shortcut icon" href="./assets/images/adopciones-plantilla.ico"/>
+    <title>Inicio - Adopciones Quilmes</title>
 </head>
 <body>
     <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/500x500logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/logo-adopciones-quilmes-500x500.png" alt="Logo Adopciones Quilmes">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav main-nav ms-auto mb-2 mb-lg-0 fs-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ADOPCIONES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pages/adopciones.html">PERROS</a></li>
+                    <li><a class="dropdown-item" href="./pages/adopciones.html">GATOS</a></li>
+                    <li><a class="dropdown-item" href="./pages/adopciones.html">CONTRATO DE ADOPCION</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    AYUDA
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pages/ayuda.html">TRASLADO</a></li>
+                    <li><a class="dropdown-item" href="./pages/ayuda.html">VENTA DE GARAGE</a></li>
+                    <li><a class="dropdown-item" href="./pages/ayuda.html">NECESIDADES</a></li>
+                    <li><a class="dropdown-item" href="./pages/ayuda.html">SOCIOS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+            <a href="./pages/donaciones.html" class="btn btn-danger btn-lg ms-5">
+              <img src="./assets/images/white_paw.png" alt="Huella animal" class="animationImg"> DONAR</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- CAROUSEL -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/dogcarousel.jpg" class="d-block w-100" alt="Perro banner">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/catcarousel.jpg" class="d-block w-100" alt="Gato Banner">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/volunteercarousel.jpg" class="d-block w-100" alt="Voluntarios Banner">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav main-nav ms-auto mb-2 mb-lg-0 fs-5">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  ADOPCIONES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./pages/adopciones.html">PERROS</a></li>
-                  <li><a class="dropdown-item" href="./pages/adopciones.html">GATOS</a></li>
-                  <li><a class="dropdown-item" href="./pages/adopciones.html">CONTRATO DE ADOPCION</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  AYUDA
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./pages/ayuda.html">TRASLADO</a></li>
-                  <li><a class="dropdown-item" href="./pages/ayuda.html">VENTA DE GARAGE</a></li>
-                  <li><a class="dropdown-item" href="./pages/ayuda.html">NECESIDADES</a></li>
-                  <li><a class="dropdown-item" href="./pages/ayuda.html">SOCIOS</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
-          <a href="./pages/donaciones.html" class="btn btn-danger btn-lg ms-5">
-            <img src="./assets/images/white_paw.png" alt="paw" class="animationImg"> DONAR</a>
-    </nav>
-
-    <!-- CAROUSEL -->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/images/dogcarousel.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/catcarousel.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/volunteercarousel.jpg" class="d-block w-100" alt="...">
+  
+        <!-- INTRODUCTION -->
+        <div class="container-fluid">
+          <div class="row text-center bg-primary text-light">
+            <div class="col p-3">
+                <h1>ADOPCIONES QUILMES</h1>
+                <p class="homeIntroductionText">Somos un grupo de personas que amamos a los animales y por eso actuamos en contra del abandono, el hambre y la soledad de los perros y gatos de la calle. Trabajamos como voluntarios para el refugio, pero no es un lugar donde los perros pueden quedar de por vida, necesitan el amor de una familia para vivir felices. No contamos con la ayuda de ningún organismo, hacemos todo ad honorem, con nuestros recursos y con lo que ustedes colaboran. Rescatamos perros y gatos de la calle abandonados por personas sin corazón. Muchas veces estos animales se encuentran en muy mal estado, ya sea por falta de comida, frío, sed, etc. La mayoría de los animales tienen historias muy tristes, algunos fueron atropellados, golpeados, otros quemados. Por eso intentamos darles otra oportunidad, porque ellos se la merecen. Los curamos y los ponemos en adopción. Nosotros no ganamos nada material con esto, pero la felicidad de ellos es lo que nos llena.</p>
+                <p class="homeIntroductionText-xs">Somos un grupo de personas que amamos a los animales y por eso actuamos en contra del abandono, el hambre y la soledad de los perros y gatos de la calle.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!-- INTRODUCTION -->
-      <div class="container-fluid">
-        <div class="row text-center bg-primary text-light">
-          <div class="col p-3">
-              <h1>¿Quienes Somos?</h1>
-              <p class="homeIntroductionText">Somos un grupo de personas que amamos a los animales y por eso actuamos en contra del abandono, el hambre y la soledad de los perros y gatos de la calle. Trabajamos como voluntarios para el refugio, pero no es un lugar donde los perros pueden quedar de por vida, necesitan el amor de una familia para vivir felices. No contamos con la ayuda de ningún organismo, hacemos todo ad honorem, con nuestros recursos y con lo que ustedes colaboran. Rescatamos perros y gatos de la calle abandonados por personas sin corazón. Muchas veces estos animales se encuentran en muy mal estado, ya sea por falta de comida, frío, sed, etc. La mayoría de los animales tienen historias muy tristes, algunos fueron atropellados, golpeados, otros quemados. Por eso intentamos darles otra oportunidad, porque ellos se la merecen. Los curamos y los ponemos en adopción. Nosotros no ganamos nada material con esto, pero la felicidad de ellos es lo que nos llena.</p>
-              <p class="homeIntroductionText-xs">Somos un grupo de personas que amamos a los animales y por eso actuamos en contra del abandono, el hambre y la soledad de los perros y gatos de la calle.</p>
+  
+        <!-- ARTICLES -->
+      <section class="container">
+        <article class="row mt-5 mb-5" data-aos="fade-right">
+  
+          <div class="col-lg-4 d-flex align-items-center justify-content-center">
+            <img src="./assets/images/adopciones2.png" alt="Gatos y perros en adopcion" class="img-fluid">
           </div>
-        </div>
-      </div>
-
-      <!-- ARTICLES -->
-    <section class="container">
-      <article class="row mt-5 mb-5" data-aos="fade-right">
-
-        <div class="col-lg-4 d-flex align-items-center justify-content-center">
-          <img src="./assets/images/adopciones2.png" alt="" class="img-fluid">
-        </div>
-
-        <div class="col-lg-8 d-flex flex-column align-items-center justify-content-between">
-          <h2>Adopciones</h2>
-          <p class="ps-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam voluptate vero officiis esse illo illum minima ad nisi distinctio sequi sapiente mollitia, culpa eaque enim error iure odit aut assumenda provident? Qui ducimus iure doloribus perspiciatis dicta, dolores eligendi rem enim! Voluptate beatae et porro odit modi, eligendi cumque!</p>
-          <a class="btn btn-primary" href="./pages/adopciones.html">Quiero adoptar</a>                 
-        </div>
-
-      </article>
-
-      <article class="row mt-5 mb-5 flex-wrap-reverse" data-aos="fade-left">
+  
+          <div class="col-lg-8 d-flex flex-column align-items-center justify-content-between">
+            <h2>Adopciones</h2>
+            <p class="ps-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam voluptate vero officiis esse illo illum minima ad nisi distinctio sequi sapiente mollitia, culpa eaque enim error iure odit aut assumenda provident? Qui ducimus iure doloribus perspiciatis dicta, dolores eligendi rem enim! Voluptate beatae et porro odit modi, eligendi cumque!</p>
+            <a class="btn btn-primary" href="./pages/adopciones.html">Quiero adoptar</a>                 
+          </div>
+  
+        </article>
+  
+        <article class="row mt-5 mb-5 flex-wrap-reverse" data-aos="fade-left">
+          
+          <div class="col-lg-8 d-flex flex-column align-items-center justify-content-between">
+            <h2>Contacto</h2>
+            <p class="ps-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam voluptate vero officiis esse illo illum minima ad nisi distinctio sequi sapiente mollitia, culpa eaque enim error iure odit aut assumenda provident? Qui ducimus iure doloribus perspiciatis dicta, dolores eligendi rem enim! Voluptate beatae et porro odit modi, eligendi cumque!</p>
+            <a class="btn btn-primary" href="./pages/contacto.html">Contactar</a>                 
+          </div>
+          
+          <div class="col-lg-4 d-flex align-items-center justify-content-center">
+            <img src="./assets/images/contacto2.jpg" alt="Contacto refugio" class="img-fluid">
+          </div>
         
-        <div class="col-lg-8 d-flex flex-column align-items-center justify-content-between">
-          <h2>Contacto</h2>
-          <p class="ps-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam voluptate vero officiis esse illo illum minima ad nisi distinctio sequi sapiente mollitia, culpa eaque enim error iure odit aut assumenda provident? Qui ducimus iure doloribus perspiciatis dicta, dolores eligendi rem enim! Voluptate beatae et porro odit modi, eligendi cumque!</p>
-          <a class="btn btn-primary" href="./pages/contacto.html">Contactar</a>                 
+        </article>
+  
+        <article class="row mt-5 mb-5" data-aos="fade-right">
+  
+          <div class="col-lg-4 d-flex align-items-center justify-content-center">
+            <img src="./assets/images/ayuda2.png" alt="Ayuda animales" class="img-fluid">
+          </div>
+  
+          <div class="col-lg-8 d-flex flex-column align-items-center justify-content-between">
+            <h2>Ayuda</h2>
+            <p class="ps-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam voluptate vero officiis esse illo illum minima ad nisi distinctio sequi sapiente mollitia, culpa eaque enim error iure odit aut assumenda provident? Qui ducimus iure doloribus perspiciatis dicta, dolores eligendi rem enim! Voluptate beatae et porro odit modi, eligendi cumque!</p>
+            <a class="btn btn-primary" href="./pages/ayuda.html">Quiero Ayudar</a>                 
+          </div>
+        </article>
+      </section>
+  
+      <div class="separator"></div>
+  
+      <section class="container-fluid">
+        <div class="row justify-content-center flex-wrap">
+          <h2 class="text-center mt-3">Nuestros Sponsors</h2>
+          <div class="col text-center m-4">
+            <a href="https://www.purina-latam.com/ar/purina" target="_blank"><img src="assets/images/purina.png" alt="Purina logo" class="sponsorLogo"></a>
+          </div>
+          <div class="col text-center m-4">
+            <a href="https://www.royalcanin.com/ar" target="_blank"><img src="./assets/images/royal.png" alt="Royal logo" class="sponsorLogo"></a>
+          </div>
+          <div class="col text-center m-4">
+            <a href="https://www.whiskas.com.ar/" target="_blank"><img src="./assets/images/whiskas.png" alt="Whiskas logo" class="sponsorLogo"></a>
+          </div>
         </div>
-        
-        <div class="col-lg-4 d-flex align-items-center justify-content-center">
-          <img src="./assets/images/contacto2.jpg" alt="" class="img-fluid">
-        </div>
-      
-      </article>
-
-      <article class="row mt-5 mb-5" data-aos="fade-right">
-
-        <div class="col-lg-4 d-flex align-items-center justify-content-center">
-          <img src="./assets/images/ayuda2.png" alt="" class="img-fluid">
-        </div>
-
-        <div class="col-lg-8 d-flex flex-column align-items-center justify-content-between">
-          <h2>Ayuda</h2>
-          <p class="ps-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam voluptate vero officiis esse illo illum minima ad nisi distinctio sequi sapiente mollitia, culpa eaque enim error iure odit aut assumenda provident? Qui ducimus iure doloribus perspiciatis dicta, dolores eligendi rem enim! Voluptate beatae et porro odit modi, eligendi cumque!</p>
-          <a class="btn btn-primary" href="./pages/ayuda.html">Quiero Ayudar</a>                 
-        </div>
-      </article>
-    </section>
-
-    <div class="separator"></div>
-
-    <section class="container-fluid">
-      <div class="row justify-content-center flex-wrap">
-        <h2 class="text-center mt-3">Nuestros Sponsors</h2>
-        <div class="col text-center m-4"">
-          <a href="https://www.purina-latam.com/ar/purina" target="_blank"><img src="assets/images/purina.png" alt="Purina logo" class="sponsorLogo"></a>
-        </div>
-        <div class="col text-center m-4">
-          <a href="https://www.royalcanin.com/ar" target="_blank"><img src="./assets/images/royal.png" alt="Royal logo" class="sponsorLogo"></a>
-        </div>
-        <div class="col text-center m-4">
-          <a href="https://www.whiskas.com.ar/" target="_blank"><img src="./assets/images/whiskas.png" alt="Whiskas logo" class="sponsorLogo"></a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="container-fluid">
