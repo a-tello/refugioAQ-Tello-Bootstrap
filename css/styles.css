@@ -59,6 +59,11 @@
 
 .carousel-inner {
   max-height: 700px;
+  min-height: 360px;
+}
+.carousel-inner .carousel-item {
+  max-height: 700px;
+  position: relative;
 }
 .carousel-inner .mainOverlayBanner {
   position: absolute;
@@ -72,11 +77,6 @@
   max-height: 700px;
   -o-object-position: center;
      object-position: center;
-}
-
-.active {
-  display: flex;
-  justify-content: center;
 }
 
 .navbar-brand img {
@@ -293,9 +293,16 @@ footer .nav-bar .nav-item:hover {
   }
   .carousel-caption {
     height: 100%;
+    width: 100%;
+    left: 0;
   }
   footer .nav-bar {
     flex-flow: column nowrap;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carousel-caption {
+    position: relative;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,10 @@
 .carousel-inner{
     max-height: $bannerHeight + 200px;
+    min-height: 360px;
+    .carousel-item{
+        max-height: $bannerHeight + 200px;
+        position: relative;
+    }
     .mainOverlayBanner{
         @extend .banner;
         position: absolute;
@@ -12,9 +17,4 @@
         max-height: $bannerHeight + 200px;
         object-position: center;
     }
-}
-
-.active{
-    display: flex;
-    justify-content: center;
 }
