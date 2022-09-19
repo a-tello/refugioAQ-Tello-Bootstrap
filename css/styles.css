@@ -288,9 +288,6 @@ footer .nav-bar .nav-item:hover {
   }
 }
 @media only screen and (max-width: 576px) {
-  /*.sponsorLogo{
-      width: 100%;
-  }*/
   .container-cards {
     justify-content: center;
   }
@@ -300,9 +297,5 @@ footer .nav-bar .nav-item:hover {
   footer .nav-bar {
     flex-flow: column nowrap;
     align-items: center;
-  }
-  footer .nav-bar .nav-link::after {
-    content: "";
-    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
