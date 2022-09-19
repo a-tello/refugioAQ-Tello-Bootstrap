@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/* Estoy en duda si este mixin es correcto o si debería ser un extend*/
 @-webkit-keyframes paw_movement {
   20% {
     transform: rotate(-45deg);
@@ -32,13 +30,14 @@
     transform: translateY(-10px);
   }
 }
-.banner, .bannerCardContactPage, .bannerCardHelpPage, .bannerCardDonationPage, .bannerCard, .overlayBanner {
+.banner, .carousel-inner .mainOverlayBanner, .bannerCardContactPage, .bannerCardHelpPage, .bannerCardDonationPage, .bannerCard, .overlayBanner {
   height: 500px;
   background-size: cover;
   background-position: center;
 }
 
 .overlayBanner {
+  width: 100%;
   background: linear-gradient(270deg, rgba(42, 86, 42, 0), rgba(26, 46, 23, 0.4) 80%, rgba(24, 44, 24, 0.8588235294));
 }
 
@@ -56,6 +55,28 @@
 
 .bannerCardContactPage {
   background-image: url("../assets/images/bannerContacto-min.jpg");
+}
+
+.carousel-inner {
+  max-height: 700px;
+}
+.carousel-inner .mainOverlayBanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(24, 44, 24, 0.8588235294), rgba(26, 46, 23, 0.4) 80%, rgba(24, 44, 24, 0.8588235294));
+}
+.carousel-inner .carousel-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 700px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-brand img {
@@ -82,13 +103,36 @@
           animation-delay: 5s;
 }
 
-.footer-nav li:hover {
+footer .nav-bar .nav-item {
+  transition: all 1s;
+  /*.nav-link::after{
+      content: "|";
+      padding: 0 0 0 20px;
+  }
+  &:last-child .nav-link:after{
+      content: "";
+  }*/
+}
+footer .nav-bar .nav-item:hover {
+  background-color: #39593d;
+}
+
+.social-media li:hover {
   -webkit-animation-name: levitate;
           animation-name: levitate;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+.social-media li:hover .social-media__tw {
+  filter: drop-shadow(0px 0px 10px #13e5f0);
+}
+.social-media li:hover .social-media__ig {
+  filter: drop-shadow(0px 0px 10px #ae13f0);
+}
+.social-media li:hover .social-media__fb {
+  filter: drop-shadow(0px 0px 10px #1359f0);
 }
 
 .bg-primary {
@@ -107,13 +151,14 @@
   background-color: #4f1d7d;
   border-color: #8448bb;
 }
+.btn-primary:focus {
+  background-color: #4f1d7d;
+  border-color: #8448bb;
+  box-shadow: 0 0 0 0.25rem #8448bb;
+}
 
 .homeIntroductionText-xs {
   display: none;
-}
-
-.carousel-inner {
-  max-height: 500px;
 }
 
 .separator {
@@ -122,10 +167,35 @@
   box-shadow: 0 0 5px 0 rgb(0, 0, 0);
 }
 
-.imgCard {
-  height: 300px;
-  background-position: center;
-  background-size: cover;
+.card {
+  background-color: rgba(79, 29, 125, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+.card .imgCard {
+  height: 100%;
+}
+.card .imgCard img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.7s;
+}
+.card .card-body {
+  position: absolute;
+  width: 100%;
+  bottom: -30%;
+  transition: all 0.7s;
+  background-color: #4f1d7d;
+}
+.card:hover .imgCard img {
+  height: 60%;
+}
+.card:hover .card-body {
+  bottom: 0;
 }
 
 .catSelector {
@@ -168,14 +238,12 @@
 }
 .container-cards .animalCard {
   border: 0;
-  transition: all 0.5s;
 }
 .container-cards .animalCard a {
   text-decoration: none;
   background-color: rgb(95, 52, 135);
 }
 .container-cards .animalCard:hover {
-  transform: scale(1.1, 1.1);
   opacity: 1;
   filter: blur(0px);
 }
@@ -203,34 +271,38 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .donation-button {
-    order: 0;
+  .donation-btn {
+    margin: 0 !important;
   }
   .navbar-toggler {
     order: 1;
   }
+  .navbar-collapse {
+    order: 3;
+  }
   .navbar-nav {
     align-items: center;
   }
-  /*Help page*/
   .helpPageBtn {
     align-self: center !important;
   }
 }
 @media only screen and (max-width: 576px) {
-  .sponsorLogo {
-    width: 100%;
-  }
-  .homeIntroductionText {
-    display: none;
-  }
-  .homeIntroductionText-xs {
-    display: block;
-  }
+  /*.sponsorLogo{
+      width: 100%;
+  }*/
   .container-cards {
     justify-content: center;
   }
-  footer {
-    text-align: center;
+  .carousel-caption {
+    height: 100%;
+  }
+  footer .nav-bar {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  footer .nav-bar .nav-link::after {
+    content: "";
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

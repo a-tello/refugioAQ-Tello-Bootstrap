@@ -6,9 +6,14 @@ $customSizes:(
     "500": 500px
 );
 
+$socialMediaColors:(
+  "twitter": #13e5f0,
+  "instagram":#ae13f0,
+  "facebook": #1359f0
+);
+
 $primaryColor: #629668;
+$darkPrimaryColor: #39593d;
 $secondaryColor: #8448bb;
 $darkSecondaryColor: #4f1d7d;
 $bannerHeight: map-get($customSizes, "500");
-
-
