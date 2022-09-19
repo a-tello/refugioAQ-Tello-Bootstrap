@@ -63,7 +63,7 @@
 			</nav>
 		  </header>
 
-    <main>
+    <main class = "bg-light">
 
       <!-- BANNER -->
   
@@ -77,16 +77,16 @@
         </div>
   
       <!-- MAIN CONTENT -->
-        <div class="container mb-5">
+        <div class="container my-5">
           <div class="row justify-content-between">
-              <form class="col-lg-6 g-3">
-                  <label for="inputName" class="form-label">Nombre</label>
+              <form class="col-lg-6 g-3 shadow rounded">
+                  <label for="inputName" class="form-label fw-bold">Nombre*</label>
                   <input type="text" class="form-control mb-3" id="inputName">
-                  <label for="inputEmail4" class="form-label">Email</label>
+                  <label for="inputEmail4" class="form-label fw-bold">Email*</label>
                   <input type="email" class="form-control mb-3" id="inputEmail4">
-                  <label for="inputTel" class="form-label">Telefono</label>
+                  <label for="inputTel" class="form-label fw-bold">Telefono*</label>
                   <input type="text" class="form-control mb-3" id="inputTel">
-                  <label for="inputMotivo" class="form-label">Motivo</label>
+                  <label for="inputMotivo" class="form-label fw-bold">Motivo*</label>
                   <select id="inputMotivo" class="form-select mb-3">
                   <option value="donaciones">Donaciones</option>
                   <option value="socios">Socios</option>
@@ -94,38 +94,53 @@
                   <option value="adopciones">Adopciones</option>
                   <option value="otro">Otro</option>
                   </select>
-                  <label for="inputMensaje" class="form-label">Mensaje</label>
+                  <label for="inputMensaje" class="form-label fw-bold">Mensaje*</label>
                   <textarea class="form-control mb-3" id="inputMensaje"></textarea>
-                  <button type="submit" class="btn btn-primary my-3">Enviar mensaje</button>
+                  <button type="submit" class="btn btn-primary my-3 ">Enviar mensaje</button>
                 </form>
               
-              <div class="col-lg-6">
+              <div class="col-lg-5">
                   <div class="row">
-                      <div class="col-lg-6 text-center g-3">
-                          <h2>Email</h2>
-                          <p><span>Consultas: </span>xxxxx@xxxxxx.com</p>
-                          <p><span>Socios: </span>xxxxx@xxxxxx.com</p>
+                      <div class="col-lg-12 g-3">
+                        <h3>Datos de Contacto</h3>
+                        <ul class="list-unstyled fs-5 d-flex flex-column">
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            <a href="mailto:consultasq@gmail.com" class="text-decoration-none text-dark">consultasAQ@gmail.com</a>
+                          </li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            <a href="mailto:consultasq@gmail.com" class="text-decoration-none text-dark">sociosAQ@gmail.com</a>
+                          </li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                            </svg>
+                              Rivadavia 300, Quilmes, Bs.As., Argentina
+                          </li>
+                        </ul>
                       </div>
-                      <div class="col-lg-6 text-center g-3">
-                          <h2>Dirección</h2>
-                          <p>xxxxxxxx xxxx, Quilmes, Buenos Aires, Argentina</p>
+                      <hr>
+                      <div class="row">
+                        <div class="col mb-5">
+                            <h3>Nuestras redes</h3>
+                            <a href="https://twitter.com/AdopcionesQ" class="mx-3 socialMedia__link"><img src="../assets/images/tw50.png" alt="AQ logo twitter"></a>
+                            <a href="https://www.instagram.com/adopcionesquilmes" class="mx-3 socialMedia__link"><img src="../assets/images/ig50.png" alt="AQ logo Instagram"></a>
+                            <a href="https://es-la.facebook.com/AdopcionesQuilmes" class="mx-3 socialMedia__link"><img src="../assets/images/fb50.png" alt="AQ logo facebook"></a>
+                        </div>
                       </div>
-                  </div>
-                  <div class="row justify-content-center">
-                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26234.647596634837!2d-58.23294636047127!3d-34.722051444780185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x253544f047baecad!2sAdopciones%20Quilmes!5e0!3m2!1ses!2sar!4v1659050620079!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe>
-                  </div>  
-              </div>   
-          </div>
-          <div class="row my-3">
-              <div class="col text-center">
-                  <h2>Contactanos en nuestras redes</h2>
-                  <a href="https://twitter.com/AdopcionesQ" class="mx-3 socialMedia__link"><img src="../assets/images/tw50.png" alt="AQ logo twitter"></a>
-                  <a href="https://www.instagram.com/adopcionesquilmes" class="mx-3 socialMedia__link"><img src="../assets/images/ig50.png" alt="AQ logo Instagram"></a>
-                  <a href="https://es-la.facebook.com/AdopcionesQuilmes" class="mx-3 socialMedia__link"><img src="../assets/images/fb50.png" alt="AQ logo facebook"></a>
+                    <div class="row justify-content-center  ">
+                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26234.647596634837!2d-58.23294636047127!3d-34.722051444780185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x253544f047baecad!2sAdopciones%20Quilmes!5e0!3m2!1ses!2sar!4v1659050620079!5m2!1ses!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe>
+                    </div>  
+                  </div>   
               </div>
           </div>
         </div>
-
         <div class="separator"></div>
         
         <!-- SPONSORS -->
