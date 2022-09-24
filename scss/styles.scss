@@ -62,7 +62,7 @@ body{
     .card-body{
         position: absolute;
         width: 100%;
-        bottom: -30%;
+        bottom: -25%;
         transition: all .7s;
         background-color: $darkSecondaryColor;
     }
@@ -100,6 +100,8 @@ body{
         }
     }
     .animalCard{
+        width: 18rem; 
+        height: 30rem;
         border: 0;
         a{
             text-decoration: none;

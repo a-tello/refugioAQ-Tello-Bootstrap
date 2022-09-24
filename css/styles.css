@@ -190,7 +190,7 @@ body {
 .card .card-body {
   position: absolute;
   width: 100%;
-  bottom: -30%;
+  bottom: -25%;
   transition: all 0.7s;
   background-color: #4f1d7d;
 }
@@ -210,6 +210,9 @@ body {
   transition: all 0.5s;
   background-image: url("../assets/images/gatos.png");
 }
+.catSelector h2 {
+  background-color: #4f1d7d;
+}
 .catSelector:hover {
   transform: scale(1.1, 1.1);
 }
@@ -227,6 +230,9 @@ body {
   transition: all 0.5s;
   background-image: url("../assets/images/perros.png");
 }
+.dogSelector h2 {
+  background-color: #4f1d7d;
+}
 .dogSelector:hover {
   transform: scale(1.1, 1.1);
 }
@@ -240,6 +246,8 @@ body {
   opacity: 0.5;
 }
 .container-cards .animalCard {
+  width: 18rem;
+  height: 30rem;
   border: 0;
 }
 .container-cards .animalCard a {

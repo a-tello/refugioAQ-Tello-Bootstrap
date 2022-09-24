@@ -4,10 +4,18 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- SEO -->
 		<meta name="description" content="En nuestro refugio podes encontrar mas de 150 animales que quieren tener una familia">
 		<meta name="keywords" content="adopciones en quilmes, adoptar perro, adoptar gato, adoptar refugio quilmes">
+		<!-- AOS -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- BOOTSTRAP -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+		<!-- CUSTOM STYLES -->
 		<link rel="stylesheet" href="../css/styles.css">
 		<link rel="shortcut icon" href="../assets/images/adopciones-plantilla.ico"/>
 		<title>Adopciones - Adopciones Quilmes</title>
@@ -16,96 +24,75 @@
 		<!-- HEADER -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-				  <a class="navbar-brand col-lg-4" href="../index.html">
-					<img src="../assets/images/logo-adopciones-quilmes-500x500.png" alt="Logo Adopciones Quilmes">
-				  </a>
-				  <button class="navbar-toggler col-lg-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse col-lg-4" id="navbarSupportedContent">
-					<ul class="navbar-nav main-nav ms-auto mb-2 mb-lg-0 fs-5">
-					  <li class="nav-item">
-						<a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-					  </li>
-					  
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  ADOPCIONES
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="#">PERROS</a></li>
-						  <li><a class="dropdown-item" href="#">GATOS</a></li>
-						  <li><a class="dropdown-item" href="#">CONTRATO DE ADOPCION</a></li>
-						</ul>
-					  </li>
-		
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  AYUDA
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="./ayuda.html">TRASLADO</a></li>
-						  <li><a class="dropdown-item" href="./ayuda.html">VENTA DE GARAGE</a></li>
-						  <li><a class="dropdown-item" href="./ayuda.html">NECESIDADES</a></li>
-						  <li><a class="dropdown-item" href="./ayuda.html">SOCIOS</a></li>
-						</ul>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="./contacto.html">CONTACTO</a>
-					  </li>
-					</ul>
-				  </div>
-				  <a href="./donaciones.html" class="btn btn-danger btn-lg ms-5 donation-btn">
+			  <div class="container justify-contetn-center">
+				<a class="navbar-brand col-lg-2 text-center" href="../index.html">
+				  <img src="../assets/images/logo-adopciones-quilmes-500x500.png" alt="Logo Adopciones Quilmes">
+				</a>
+				<button class="navbar-toggler col-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse col-lg-8" id="navbarSupportedContent">
+				  <ul class="navbar-nav main-nav ms-auto mb-2 mb-lg-0 fs-5">
+					<li class="nav-item">
+					  <a class="nav-link fs-4" aria-current="page" href="../index.html">INICIO</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link active fs-4" href="./adopciones.html">ADOPCIONES</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link fs-4" href="./ayuda.html">AYUDA</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link fs-4" href="./contacto.html">CONTACTO</a>
+					</li>
+				  </ul>
+				</div>
+				<a href="../pages/donaciones.html" class="col-lg-2 btn btn-danger btn-lg mx-3 donation-btn fs-4">
 					<img src="../assets/images/white_paw.png" alt="Huella animal" class="animationImg"> DONAR
-				  </a>
-				</nav>
-		  </header>
+				</a>
+			  </div>
+			</nav>
+		</header>
 
 
 		<main>
 
 			<!-- BANNER -->
+			<div class="card bannerCard text-bg-dark text-center">
+				<div class="overlayBanner">
+						<div class="card-img-overlay text-light d-flex flex-column justify-content-end">
+							<h1 class="card-title">ADOPCIONES</h1>
+							<p class="card-text fs-5">En Adopciones Quilmes tenemos a mas de 150 animales entre perros y gatos, todos esperan una familia y esa puede ser la tuya. Cambia una vida.</p>
+						</div>
+				</div>
+			</div>
 	
-				<div class="card bannerCard text-bg-dark text-center">
-					<div class="overlayBanner">
-							<div class="card-img-overlay text-light d-flex flex-column justify-content-end">
-								<h1 class="card-title">ADOPCIONES</h1>
-								<p class="card-text fs-5">En Adopciones Quilmes tenemos a mas de 150 animales entre perros y gatos, todos esperan una familia y esa puede ser la tuya. Cambia una vida.</p>
+			<!-- MAIN -->
+			<section class="container text-center">
+				<div class="row mt-5 mb-5">
+
+					<div class="col col-lg-6">
+						<a href="#gatos" class="text-decoration-none text-dark d-flex justify-content-center">
+							<div class="catSelector d-flex flex-column justify-content-end">
+								<h2 class="align-self-bassel catSelectorLabel text-light">Gatos</h2>
 							</div>
+						</a>
+					</div>
+
+					<div class="col col-lg-6 text-center">
+						<a href="#perros" class="text-decoration-none text-dark d-flex justify-content-center">
+							<div class="dogSelector d-flex flex-column justify-content-end">
+								<h2 class="align-self-bassel dogSelectorLabel text-light">Perros</h2>
+							</div>
+						</a>
 					</div>
 				</div>
-	
-	
-				<!-- MAIN -->
-			<section class="container text-center">
-	
-					<div class="row mt-5 mb-5">
-	
-						<div class="col col-lg-6">
-							<a href="#" class="text-decoration-none text-dark d-flex justify-content-center">
-								<div class="catSelector d-flex flex-column justify-content-end">
-									<h2 class="align-self-bassel catSelectorLabel text-light bg-secondary">Gatos</h2>
-								</div>
-							</a>
-						</div>
-	
-						<div class="col col-lg-6 text-center">
-							<a href="#" class="text-decoration-none text-dark d-flex justify-content-center">
-								<div class="dogSelector d-flex flex-column justify-content-end">
-									<h2 class="align-self-bassel dogSelectorLabel text-light bg-secondary">Perros</h2>
-								</div>
-							</a>
-						</div>
-	
-					</div>
-				
 			</section>
 	
-	
 			<!-- CARDS -->
-			<div class="container container-cards d-flex justify-content-around flex-wrap">
-				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000" style="width: 18rem; height: 30rem;">
+			<div class="container container-cards d-flex justify-content-around flex-wrap mb-5">
+				
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000" id="gatos">
 					<div class="imgCard">
 						<img src="../assets/images/gato1.png" alt="">
 					</div>
@@ -113,23 +100,43 @@
 						<h5 class="card-title fs-3">Matias <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
 						</svg></h5>
-						<p class="card-text">1 año y 6 meses.</p>
-						<p class="card-text">Atigrado.</p>
-						<div class="d-flex">
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="No puede convivir con perros" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-octagon-fill " viewBox="0 0 16 16">
-											<path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+						<p class="card-text m-0">1 año y 6 meses.</p>
+						<p class="card-text m-0">Atigrado.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con animales" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
+						</div>
+							<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
+					</div>
+				</div>
+
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="imgCard">
+						<img src="../assets/images/gato2.png" alt="">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title fs-3">Tito <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+						</svg></h5>
+						<p class="card-text m-0">2 años y 3 meses.</p>
+						<p class="card-text m-0">Atigrado.</p>
+						<div class="d-flex m-1">
+								<div data-bs-toggle="tooltip" data-bs-placement="top" title="No puede convivir con animales" class="m-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+										<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
 									</svg>
 								</div>
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con gatos" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-											<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-									</svg>
-								</div>
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños/as" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
-											<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-											<path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/>
+								<div data-bs-toggle="tooltip" data-bs-placement="top" title="No puede convivir con niños" class="m-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-angry-fill text-danger" viewBox="0 0 16 16">
+										<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4.053 4.276a.5.5 0 0 1 .67-.223l2 1a.5.5 0 0 1 .166.76c.071.206.111.44.111.687C7 7.328 6.552 8 6 8s-1-.672-1-1.5c0-.408.109-.778.285-1.049l-1.009-.504a.5.5 0 0 1-.223-.67zm.232 8.157a.5.5 0 0 1-.183-.683A4.498 4.498 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 1 1-.866.5A3.498 3.498 0 0 0 8 10.5a3.498 3.498 0 0 0-3.032 1.75.5.5 0 0 1-.683.183zM10 8c-.552 0-1-.672-1-1.5 0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5z"/>
 									</svg>
 								</div>
 						</div>
@@ -137,9 +144,59 @@
 					</div>
 				</div>
 
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="imgCard">
+						<img src="../assets/images/gato3.png" alt="">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title fs-3">Cielo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+						</svg></h5>
+						<p class="card-text m-0">9 meses.</p>
+						<p class="card-text m-0">Blanco y negro.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Necesita adaptación" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-warning" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
+						</div>
+							<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
+					</div>
+				</div>
 
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="imgCard">
+						<img src="../assets/images/gato4.png" alt="">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title fs-3">Becker <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+						</svg></h5>
+						<p class="card-text m-0">3 meses.</p>
+						<p class="card-text m-0">Atigrado.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Necesita adaptación" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-warning" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
+						</div>
+							<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
+					</div>
+				</div>
 
-				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000" style="width: 18rem; height: 30rem;">
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000" id="perros">
 					<div class="imgCard">
 						<img src="../assets/images/perro1.png" alt="">
 					</div>
@@ -147,121 +204,152 @@
 						<h5 class="card-title fs-3">Milo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
 						</svg></h5>
-						<p class="card-text">2 años.</p>
-						<p class="card-text">Marron.</p>
-						<div class="d-flex">
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="No puede convivir con perros" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-octagon-fill " viewBox="0 0 16 16">
-											<path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
-									</svg>
-								</div>
+						<p class="card-text m-0">2 años.</p>
+						<p class="card-text m-0">Marron.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="No puede convivir con animales" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
 						</div>
 						<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
 					</div>
 				</div>
 
-				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000" style="width: 18rem; height: 30rem;">
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000">
 					<div class="imgCard">
 						<img src="../assets/images/perro2.png" alt="">
 					</div>
 					<div class="card-body">
-						<h5 class="card-title fs-3">Simona<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+						<h5 class="card-title fs-3">Simona <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
 						</svg></h5>
-						<p class="card-text">3 años y 2 meses.</p>
-						<p class="card-text">Marron.</p>
-						<div class="d-flex">
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños/as" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
-											<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-											<path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/>
-									</svg>
-								</div>
+						<p class="card-text m-0">3 años y 2 meses.</p>
+						<p class="card-text m-0">Marron.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con animales" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
 						</div>
 						<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
 					</div>
 				</div>
 
-				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000" style="width: 18rem; height: 30rem;">
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000">
 					<div class="imgCard">
 						<img src="../assets/images/perro3.png" alt="">
 					</div>
 					<div class="card-body">
-						<h5 class="card-title fs-3">Marco<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+						<h5 class="card-title fs-3">Marco <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
 						</svg></h5>
-						<p class="card-text">5 meses.</p>
-						<p class="card-text">Blanco y marron.</p>
-						<div class="d-flex">
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con gatos" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-											<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-									</svg>
-								</div>
-								<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños/as" class="m-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
-											<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-											<path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/>
-									</svg>
-								</div>
+						<p class="card-text m-0">5 meses.</p>
+						<p class="card-text m-0">Blanco y marron.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Necesita adaptación" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-warning" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
 						</div>
 						<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
 					</div>
 				</div>
+
+				<div class="card animalCard text-light m-3" data-aos="fade-up" data-aos-duration="1000">
+					<div class="imgCard">
+						<img src="../assets/images/perro4.png" alt="">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title fs-3">Bruma <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+						</svg></h5>
+						<p class="card-text m-0">3 años.</p>
+						<p class="card-text m-0">Blanca y marrón.</p>
+						<div class="d-flex m-1">
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con animales" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+								</svg>
+							</div>
+							<div data-bs-toggle="tooltip" data-bs-placement="top" title="Puede convivir con niños" class="m-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill text-success" viewBox="0 0 16 16">
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+								</svg>
+							</div>
+						</div>
+							<a href="#" class="btn btn-primary bg-primary text-center p-2 text-light ">+Mas info </a>
+					</div>
+				</div>
+
 			</div>
-			
-					
+				
 			<!-- SPONSORS -->
-	
 			<div class="separator"></div>
 	
 			<section class="container-fluid">
-				<h2 class="text-center mt-3 display-5">Nuestros Sponsors</h2>
-				<div class="row justify-content-center pb-3">
-				  <div class="col-md-4 text-center" data-aos="zoom-in">
-					<a href="https://www.purina-latam.com/ar/purina" target="_blank"><img src="../assets/images/purina.png" alt="Purina logo" class="sponsorLogo"></a>
-				  </div>
-				  <div class="col-md-4 text-center" data-aos="zoom-in">
-					<a href="https://www.royalcanin.com/ar" target="_blank"><img src="../assets/images/royal.png" alt="Royal logo" class="sponsorLogo"></a>
-				  </div>
-				  <div class="col-md-4 text-center" data-aos="zoom-in">
-					<a href="https://www.whiskas.com.ar/" target="_blank"><img src="../assets/images/whiskas.png" alt="Whiskas logo" class="sponsorLogo"></a>
-				  </div>
-				</div>
-			</section>
+        <h2 class="text-center mt-3 display-5">Nuestros Sponsors</h2>
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-4 text-center py-2" data-aos="zoom-in">
+            <a href="https://www.purina-latam.com/ar/purina" target="_blank"><img src="../assets/images/purina.png" alt="Purina logo" class="sponsorLogo img-fluid"></a>
+          </div>
+          <div class="col-md-4 text-center py-2" data-aos="zoom-in">
+            <a href="https://www.royalcanin.com/ar" target="_blank"><img src="../assets/images/royal.png" alt="Royal logo" class="sponsorLogo img-fluid"></a>
+          </div>
+          <div class="col-md-4 text-center py-2" data-aos="zoom-in">
+            <a href="https://www.whiskas.com.ar/" target="_blank"><img src="../assets/images/whiskas.png" alt="Whiskas logo" class="sponsorLogo img-fluid"></a>
+          </div>
+        </div>
+      </section>
 		</main>
 
 		<!-- FOOTER -->
 		<footer class="container-fluid">
-			<div class="row bg-primary">
-			  <div class="col-12">
-				<ul class="nav nav-bar justify-content-center fs-5 flex-nowrap" >
-				  <li class="nav-item">
-					<a class="nav-link text-light" href="./contacto.html">Contacto</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-light" href="./adopciones.html">¿Cómo adoptar?</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-light" href="./ayuda.html">Ayudanos</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-light" href="#">FAQs</a>
-				  </li>
-				</ul>
-			  </div>
-			  <div class="col-12  mt-5 d-flex align-items-end justify-content-center">
-				<ul class="nav social-media">
-				  <li class="nav-item p-2 mx-2"><a href="https://twitter.com/AdopcionesQ" target="_blank"><img src="../assets/images/tw50.png" alt="AQ logo twitter" class="social-media__tw"></a></li>
-				  <li class="nav-item p-2 mx-2"><a href="https://www.instagram.com/adopcionesquilmes" target="_blank"><img src="../assets/images/ig50.png" alt="AQ logo instagram" class="social-media__ig"></a></li>
-				  <li class="nav-item p-2 mx-2"><a href="https://es-la.facebook.com/AdopcionesQuilmes/" target="_blank"><img src="../assets/images/fb50.png" alt="AQ logo facebook" class="social-media__fb"></a></li>
-				</ul>
-			  </div>
-			  <div class="col-12 text-light d-flex justify-content-end align-items-end">
-				<p>© Adopciones Quilmes 2022</p> 
-			  </div>
-			</div>
-		</footer>
+      <div class="row bg-primary">
+        <div class="col-12 my-3">
+          <ul class="nav nav-bar justify-content-center fs-5 flex-nowrap" >
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./adopciones.html">¿Cómo adoptar?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./ayuda.html">Ayudanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 social-media d-flex align-items-end justify-content-center flex-wrap">
+          <a href="https://twitter.com/AdopcionesQ" target="_blank" class="mx-3"><img src="../assets/images/tw50.png" alt="AQ logo twitter" class="social-media__tw img-fluid"></a>
+          <a href="https://www.instagram.com/adopcionesquilmes" target="_blank" class="mx-3"><img src="../assets/images/ig50.png" alt="AQ logo instagram" class="social-media__ig img-fluid"></a>
+          <a href="https://es-la.facebook.com/AdopcionesQuilmes/" target="_blank" class="mx-3"><img src="../assets/images/fb50.png" alt="AQ logo facebook" class="social-media__fb img-fluid"></a>
+        </div>
+        <div class="col-12 text-light d-flex justify-content-end align-items-end mt-3">
+          <p>© Adopciones Quilmes 2022</p> 
+        </div>
+      </div>
+    </footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
