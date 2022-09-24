@@ -9,6 +9,10 @@
 @import "disposicion/footer";
 
 
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
 .bg-primary{
     background-color: $primaryColor !important;
 }
@@ -130,7 +134,10 @@
 
 @media only screen and (max-width: 992px){
     .donation-btn{
-        margin: 0 !important;
+        margin: 1rem !important;
+    }
+    .navbar-brand img{
+        justify-self:center;
     }
     .navbar-toggler{
         order: 1;
@@ -153,20 +160,9 @@
     .container-cards{
         justify-content: center;
     }
-    .carousel-caption{
-        height: 100%;
-        width: 100%;
-        left: 0;
-    }
     footer .nav-bar{
         flex-flow: column nowrap;
         align-items: center;
     }
 }
 
-@media only screen and (max-width: 400px){
-    .carousel-caption{
-        position: relative;
-        
-    }
-}
