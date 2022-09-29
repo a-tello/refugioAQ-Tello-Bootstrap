@@ -1,0 +1,52 @@
+.card{
+  background-color: rgba(79, 29, 125,0.25);
+  position: relative;
+  overflow: hidden;
+  .imgCard{
+      height: 100%;
+      img{
+          width: 100%;
+          height: 100%;
+          object-fit:none;
+          object-position: center ;
+          transition: all .7s;
+      }
+  }
+  .card-body{
+      position: absolute;
+      width: 100%;
+      bottom: -25%;
+      transition: all .7s;
+      background-color: $darkSecondaryColor;
+  }
+  &:hover{
+      .imgCard img{
+          height: 60%;
+      }
+      .card-body{
+          bottom: 0;
+      }
+  }
+}
+
+.container-cards{
+  &:hover {
+      .animalCard{
+          filter: blur(1px);
+          opacity: .5;
+      }
+  }
+  .animalCard{
+      width: 18rem; 
+      height: 30rem;
+      border: 0;
+      a{
+          text-decoration: none;
+          background-color: rgb(95, 52, 135);
+      }
+      &:hover{
+          opacity: 1;
+          filter: blur(0px);
+      }
+  }
+} 
