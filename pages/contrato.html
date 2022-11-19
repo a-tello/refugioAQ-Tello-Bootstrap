@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="En nuestro refugio podes encontrar mas de 150 animales que quieren tener una familia"
+    />
+    <meta
+      name="keywords"
+      content="adopciones en quilmes, adoptar perro, adoptar gato, adoptar refugio quilmes"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../assets/images/adopciones-icono.ico" />
+    <title>Adopciones - Adopciones Quilmes</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container justify-contetn-center">
+          <a class="navbar-brand col-lg-2 text-center" href="../index.html">
+            <img
+              src="../assets/images/logo-adopciones-quilmes-500x500.png"
+              alt="Logo Adopciones Quilmes"
+            />
+          </a>
+          <button
+            class="navbar-toggler col-lg-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-lg-8"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav main-nav ms-auto mb-2 mb-lg-0 fs-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-4"
+                  aria-current="page"
+                  href="../index.html"
+                >
+                  INICIO
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-4" href="./adopciones.html">ADOPCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="./ayuda.html">AYUDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="../pages/donaciones.html"
+            class="col-lg-2 btn btn-danger btn-lg mx-3 donation-btn fs-4"
+          >
+            <img
+              src="../assets/images/white_paw.png"
+              alt="Huella animal"
+              class="animationImg"
+            />
+            DONAR
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- BANNER -->
+      <div class="card bannerCard text-bg-dark text-center">
+        <div class="overlayBanner">
+          <div
+            class="card-img-overlay text-light d-flex flex-column justify-content-end"
+          >
+            <h1 class="card-title">ADOPCIONES</h1>
+            <p class="card-text fs-5">
+              En Adopciones Quilmes tenemos a mas de 150 animales entre perros y
+              gatos, todos esperan una familia y esa puede ser la tuya. Cambia
+              una vida.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN -->
+    <section class="container text-center my-3">
+        <h1>PRE-CONTRATO DE ADOPCIÓN</h1>
+        
+        <div class="row">
+            <div class="col-6">
+                <h2>DATOS DEL ADOPTANTE</h2>
+                <form action="">
+                    <label for="inputName" class="form-label fw-bold">Nombre*</label>
+                    <input type="text" class="form-control mb-3" id="inputName">
+                    <label for="inputDir" class="form-label fw-bold">Dirección*</label>
+                    <input type="text" class="form-control mb-3" id="inputName">
+                    <label for="inputTel" class="form-label fw-bold">Telefono*</label>
+                    <input type="text" class="form-control mb-3" id="inputTel">
+                    <label for="inputEmail4" class="form-label fw-bold">Email*</label>
+                    <input type="email" class="form-control mb-3" id="inputEmail4">
+                    <label for="inputEdad" class="form-label fw-bold">Edad*</label>
+                    <input type="number" class="form-control mb-3" id="inputEdad">
+                </form>
+            </div>
+            <div class="col-6">
+                <h2>DATOS DEL ANIMAL ADOPTADO</h2>
+                <div id="datosAnimal"></div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="text-start">Reconociéndose las partes la capacidad legal necesaria para llevar a efecto el presente contrato que se regirá por las
+                siguientes CLAUSULAS:
+                <br><br>
+                <span class="fw-bold">Primera.-</span>  El adoptante se compromete a cumplir la legislación vigente respecto de animales de compañía que
+                actualmente esté en vigor en la de la provincia donde resida, así como el cambio de nombre del microchip en el plazo
+                máximo de siete días desde la firma del presente contrato.
+                
+                En el caso de que el adoptante no cumpliese cualquiera de estos dos compromisos, el ADOPCIONES QUILMES podrá reclamar la
+                devolución del animal cedido, quedando obligado el ADOPTANTE a su inmediata devolución.
+                <br><br>
+                <span class="fw-bold">Segunda.-</span> El ADOPCIONES QUILMES se compromete a efectuar seguimientos domiciliarios del estado del animal, cada vez que
+                lo considere oportuno. Seguimientos que son aceptados por el ADOPTANTE con la firma del presente documento.
+                
+                En caso de que tras dos preavisos no se pueda llevar a cabo la revisión del animal por causas imputables al
+                ADOPTANTE, se establecerá cláusula resolutoria expresa que permite al ADOPCIONES QUILMES recuperar el animal sin
+                indemnización alguna para el ADOPTANTE.
+                
+                El ADOPTANTE está obligado a comunicar al ADOPCIONES QUILMES cualquier cambio de domicilio o de teléfono, con el fin de
+                que el ADOPCIONES QUILMES pueda efectuar los seguimientos.
+                <br><br>
+                <span class="fw-bold">Tercera.-</span> El ADOPTANTE se compromete a no ceder, donar ni sacrificar al animal sin el previo consentimiento por
+                escrito del ADOPCIONES QUILMES.
+                
+                En caso de incumplimiento de esta cláusula, el ADOPCIONES QUILMES reclamará la devolución del animal, así como en el caso
+                de sacrificio no consentido, la indemnización económica de 2.000 euros. Si el ADOPTANTE no aceptara, el
+                ADOPCIONES QUILMES se acogería a la cláusula 78 de este contrato, presentando acción judicial por el sacrificio del animal.
+                <br><br>
+                <span class="fw-bold">Cuarta.-</span> En el caso de que el animal no hubiera podido ser esterilizado con carácter previo, el ADOPTANTE se
+                compromete a efectuar a su cargo la corespondiente esterilización en un plazo máximo de seis meses desde la firma
+                del contrato, debiendo justificar por escrito su realización al ADOPCIONES QUILMES.
+                
+                En el caso de que con carácter previo a la esterilización el animal estuviera en celo, el ADOPTANTE se compromete a
+                no permitir la cría del mismo bajo ningún concepto.
+                <br><br>
+                <span class="fw-bold">Quinta.-</span> Con la firma del presente contrato el ADOPTANTE se compromete a no efectuar en el animal ningún tipo de
+                “mutilación” u operación estética ni de desungulación (en el caso de gatos).
+                <br><br>
+                <span class="fw-bold">Sexta.-</span> Son requisitos indispensables para la adopción el cumplimiento de las siguientes obligaciones:
+                
+                3) El animal adoptado no se puede utilizar para la caza o cualquier otro fin análogo que suponga un maltrato hacia
+                atros animales.
+                
+                b) El animal adoptado no puede estar atado todo o gran parte del día o en recintos de reducidas dimensiones.
+                
+                2) El animal adoptado no puede residir en otra vivienda distinta a la habitual del adoptante.
+                
+                á) El animal adoptado no puede ser destinado al fin de la cría, u otros fines lucrativos.
+                
+                El incumplimiento de cualquiera de estas obligaciones, supone la resolución automática del contrato, por lo que el
+                ADOPTANTE faculta, con la firma del presente contrato, al ADOPCIONES QUILMES a que proceda a la retirada inmediata del
+                animal por incumplimiento de cláusulas esenciales del contrato.
+                <br><br>
+                <span class="fw-bold">Siete.-</span> En caso de incumplimiento del presente contrato, el ADOPCIONES QUILMES podrá ejercitar cuantas acciones
+                judiciales y extrajudiciales ya sean penales, civiles o administrativas considere necesarias para garantizar el bienestar
+                del animal o la devolución inmediata del mismo.</p>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" type="button" id="btnContrato">Enviar contrato</button>
+        </div>
+   
+    </section>
+
+      
+
+      
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="row bg-primary">
+        <div class="col-12 my-3">
+          <ul class="nav nav-bar justify-content-center fs-5 flex-nowrap">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">¿Cómo adoptar?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./ayuda.html">Ayudanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-12 social-media d-flex align-items-end justify-content-center flex-wrap"
+        >
+          <a
+            href="https://twitter.com/AdopcionesQ"
+            target="_blank"
+            class="mx-3"
+          >
+            <img
+              src="../assets/images/tw50.png"
+              alt="AQ logo twitter"
+              class="social-media__tw img-fluid"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/adopcionesquilmes"
+            target="_blank"
+            class="mx-3"
+          >
+            <img
+              src="../assets/images/ig50.png"
+              alt="AQ logo instagram"
+              class="social-media__ig img-fluid"
+            />
+          </a>
+          <a
+            href="https://es-la.facebook.com/AdopcionesQuilmes/"
+            target="_blank"
+            class="mx-3"
+          >
+            <img
+              src="../assets/images/fb50.png"
+              alt="AQ logo facebook"
+              class="social-media__fb img-fluid"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 text-light d-flex justify-content-end align-items-end mt-3"
+        >
+          <p>© Adopciones Quilmes 2022</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
