@@ -87,13 +87,10 @@ const mostrarDatos = () => {
     const {id,nombre, pelaje, edad, sexo, comportamiento, especie, img,descripcion } = animalElegido
     const datosAnimalContainer = document.querySelector("#datosAnimal")
     const datosAnimal = document.createElement('div')
-    console.log(datosAnimal);
     datosAnimal.innerHTML = `<p class="fs-4"><span class="fw-bold">Nombre:</span> ${nombre}</p>
     <p class="fs-4"><span class="fw-bold">Edad:</span> ${edad}</p>
     <p class="fs-4"><span class="fw-bold">Sexo:</span> ${sexo}</p>`
-    
-    console.log(animalElegido);
-    
+        
     datosAnimalContainer.append(datosAnimal)
 } 
 
