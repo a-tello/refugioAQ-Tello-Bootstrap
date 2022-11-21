@@ -4,15 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO -->
-    <meta
-      name="description"
-      content="En nuestro refugio podes encontrar mas de 150 animales que quieren tener una familia"
-    />
-    <meta
-      name="keywords"
-      content="adopciones en quilmes, adoptar perro, adoptar gato, adoptar refugio quilmes"
-    />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- BOOTSTRAP -->
@@ -40,10 +31,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container justify-contetn-center">
           <a class="navbar-brand col-lg-2 text-center" href="../index.html">
-            <img
-              src="../assets/images/logo-adopciones-quilmes-500x500.png"
-              alt="Logo Adopciones Quilmes"
-            />
+            <img src="../assets/images/logo-adopciones-quilmes-500x500.png" alt="Logo Adopciones Quilmes"/>
           </a>
           <button
             class="navbar-toggler col-lg-2"
@@ -118,27 +106,6 @@
         <h1>PRE-CONTRATO DE ADOPCIÓN</h1>
         
         <div class="row">
-            <div class="col-6">
-                <h2>DATOS DEL ADOPTANTE</h2>
-                <form action="" id="formContrato">
-                    <label for="inputName" class="form-label fw-bold">Nombre*</label>
-                    <input type="text" class="form-control mb-3" id="inputName" required>
-                    <label for="inputDir" class="form-label fw-bold">Dirección*</label>
-                    <input type="text" class="form-control mb-3" id="inputName" required>
-                    <label for="inputTel" class="form-label fw-bold">Telefono*</label>
-                    <input type="text" class="form-control mb-3" id="inputTel" required>
-                    <label for="inputEmail4" class="form-label fw-bold">Email*</label>
-                    <input type="email" class="form-control mb-3" id="inputEmail" required>
-                    <label for="inputEdad" class="form-label fw-bold">Edad*</label>
-                    <input type="number" class="form-control mb-3" id="inputEdad" required>
-                </form>
-            </div>
-            <div class="col-6 text-start" >
-                <h2>DATOS DEL ANIMAL ADOPTADO</h2>
-                <div class="my-5" id="datosAnimal"></div>
-            </div>
-        </div>
-        <div class="row">
             <p class="text-start">Reconociéndose las partes la capacidad legal necesaria para llevar a efecto el presente contrato que se regirá por las
                 siguientes CLAUSULAS:
                 <br><br>
@@ -194,6 +161,29 @@
                 judiciales y extrajudiciales ya sean penales, civiles o administrativas considere necesarias para garantizar el bienestar
                 del animal o la devolución inmediata del mismo.</p>
         </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h2>DATOS DEL ADOPTANTE</h2>
+                <form action="" id="formContrato">
+                    <label for="inputName" class="form-label fw-bold">Nombre*</label>
+                    <input type="text" class="form-control mb-3" id="inputName" required>
+                    <label for="inputDir" class="form-label fw-bold">Dirección*</label>
+                    <input type="text" class="form-control mb-3" id="inputDir" required>
+                    <label for="inputTel" class="form-label fw-bold">Telefono*</label>
+                    <input type="number" class="form-control mb-3" id="inputTel" required>
+                    <label for="inputEmail4" class="form-label fw-bold">Email*</label>
+                    <input type="email" class="form-control mb-3" id="inputEmail" required>
+                    <label for="inputEdad" class="form-label fw-bold">Edad*</label>
+                    <input type="number" class="form-control mb-3" id="inputEdad" required>
+                </form>
+            </div>
+            <div class="col-6 text-start" >
+                <h2>DATOS DEL ANIMAL ADOPTADO</h2>
+                <div class="my-5" id="datosAnimal"></div>
+            </div>
+        </div>
+        
         <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-success" type="button" id="btnContrato">Enviar contrato</button>
         </div>
