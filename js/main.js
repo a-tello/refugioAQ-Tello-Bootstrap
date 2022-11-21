@@ -95,18 +95,45 @@ const mostrarDatos = () => {
 } 
 
 const validarContrato = () => {
-    btnContrato.addEventListener('submit', () => {
+    btnContrato.addEventListener('click', () => {
         const edad = document.querySelector("#inputEdad").value        
+        const nombre = document.querySelector("#inputName").value        
+        const telefono = document.querySelector("#inputTel").value        
+        const direccion = document.querySelector("#inputDir").value        
+        const mail = document.querySelector("#inputEmail").value        
+        const form = document.querySelector("#formContrato")       
         
-        edad >= 18 ? (Swal.fire(
-                    '¡Contrato enviado!',
-                    'El contrato estará en revisión para su aprobación. Nos comunicaremos a la brevedad',
-                    'success'))
-                    : (Swal.fire(
-                        'Algo salió mal :(',
-                        'La persona que envíe el pre-contrato y luego firme el contrato debe ser mayor de edad',
-                        'error',
-                    ))
+        
+        
+
+        if(nombre == '' || telefono == '' || direccion == '' || mail == '' || edad == '') {
+            Swal.fire(
+                'Algo salió mal :(',
+                'Todos los campos son obligatorios. Por favor complete los datos pedidos.',
+                'error')
+                
+            return
+        }
+
+
+        if(edad >= 18) {
+            Swal.fire(
+                '¡Contrato enviado!',
+                'El contrato estará en revisión para su aprobación. Nos comunicaremos a la brevedad',
+                'success').then(() => {
+                    window.location = "../index.html";
+                })
+            localStorage.removeItem("adoptado")
+            form.reset()
+
+
+        } else {
+            Swal.fire(
+                'Algo salió mal :(',
+                'La persona que envíe el pre-contrato y luego firme el contrato debe ser mayor de edad',
+                'error',
+            )
+        }
                         
     })
 }
