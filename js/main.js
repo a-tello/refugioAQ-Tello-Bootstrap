@@ -1,9 +1,8 @@
 // Declaraciones
-const continuarAdopcion = JSON.parse(localStorage.getItem('adoptado'))
-
+const continuarAdopcion = JSON.parse(localStorage.getItem('adoptado')) || false
 
 // Array de animales
-const animalesEnAdopcion = [matias, tito, cielo, becker, milo, simona, marco, bruma]
+let animalesEnAdopcion = []
 
 // Query de elementos
 const containerCards = document.querySelector('#containerCards')
@@ -11,12 +10,10 @@ const containerContrato = document.querySelector('#containerContrato')
 const selectorEspecie = document.querySelectorAll('.animalSelector')
 const btnContrato = document.querySelector('#btnContrato')
 
-
-
 // Funciones
 const renderizarAnimales = (especie) => {
     especieEnAdopcion = animalesEnAdopcion.filter((animal) => especie.includes(animal.especie))
-    
+    console.log(animalesEnAdopcion)
     containerCards.innerHTML = ''
     especieEnAdopcion.forEach((animal) => {
         const {id, nombre, pelaje, edad, sexo, comportamiento, especie, img, descripcion} = animal
@@ -73,12 +70,19 @@ const renderizarAnimales = (especie) => {
         location.href = "../pages/contrato.html"
         })
     })
-  }
+}
   
-
 selectorEspecie.forEach((especie) => {
-especie.addEventListener('click', () =>
-    renderizarAnimales(especie.textContent.toLocaleLowerCase()),
+especie.addEventListener('click', () => {
+    fetch("../json/data.json")
+    .then((response) => response.json())
+    .then((data) => {animalesEnAdopcion = data
+        renderizarAnimales(especie.textContent.toLocaleLowerCase())})
+
+    
+
+}
+
 )
 })
 
@@ -103,8 +107,6 @@ const validarContrato = () => {
         const mail = document.querySelector("#inputEmail").value        
         const form = document.querySelector("#formContrato")       
         
-        
-        
 
         if(nombre == '' || telefono == '' || direccion == '' || mail == '' || edad == '') {
             Swal.fire(
@@ -114,7 +116,6 @@ const validarContrato = () => {
                 
             return
         }
-
 
         if(edad >= 18) {
             Swal.fire(
@@ -126,21 +127,20 @@ const validarContrato = () => {
             localStorage.removeItem("adoptado")
             form.reset()
 
-
         } else {
             Swal.fire(
                 'Algo salió mal :(',
                 'La persona que envíe el pre-contrato y luego firme el contrato debe ser mayor de edad',
                 'error',
             )
-        }
-                        
+        }             
     })
 }
 
 
 
 // Ejecuciones
+
 
 if(continuarAdopcion && !location.href.includes('contrato.html')) {
     Swal.fire({
