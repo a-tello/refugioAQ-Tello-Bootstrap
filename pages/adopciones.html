@@ -99,31 +99,43 @@
             </div>
         </section>
 
-        <form action="" class="container visually-hidden">
+        <form action="" class="container visually-hidden" id="filtros">
             <div class="row justify-content-center">
                 
                 <div class="col-2 d-flex">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Todos</option>
-                        <option value="macho">Macho</option>
-                        <option value="hembra">Hembra</option>
+                    <select class="form-select" aria-label="Default select example" id="filtroSexo">
+                        <option selected value="">Todos</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
                     </select>
                 </div>
                 <div class="col-2 d-flex">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Todos</option>
-                        <option value="bebe">Bebes</option>
-                        <option value="">Adultos</option>
-                        <option value="adulto">Ancianos</option>
+                    <select class="form-select" aria-label="Default select example" id="filtroEdad">
+                        <option selected value="">Todos</option>
+                        <option value="Bebe">Bebes</option>
+                        <option value="Adulto">Adultos</option>
+                        <option value="Anciano">Ancianos</option>
                     </select>
                 </div>
                 <div class="col-3 d-flex justify-content-evenly">
-                    <button class="btn btn-outline-success" type="submit">Filtrar</button>
-                    <button class="btn btn-outline-danger" type="reset">Borrar Filtro</button>
+                    <button class="btn btn-outline-success" id="btnFiltrar">Filtrar</button>
+                    <button class="btn btn-outline-danger" id="btnBorrarFiltro">Borrar Filtro</button>
                 </div>
             </div>
         </form>
-                
+        
+        <div class="container text-center my-5 visually-hidden" id="loader">
+            <div class="lds-roller">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
 
       <!-- CARDS -->
       <div class="container container-cards d-flex justify-content-around flex-wrap mb-5" id="containerCards"></div>
