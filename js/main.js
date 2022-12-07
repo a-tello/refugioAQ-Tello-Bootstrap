@@ -1,5 +1,6 @@
 // Declaraciones
 const continuarAdopcion = JSON.parse(localStorage.getItem('adoptado')) || false
+let especieSeleccionada
 
 // Array de animales
 let animalesEnAdopcion = []
@@ -9,12 +10,39 @@ const containerCards = document.querySelector('#containerCards')
 const containerContrato = document.querySelector('#containerContrato')
 const selectorEspecie = document.querySelectorAll('.animalSelector')
 const btnContrato = document.querySelector('#btnContrato')
+const btnCancelarAdopcion = document.querySelector('#btnCancelarAdopcion')
+const filtros = document.querySelector('#filtros')
+const btnFiltrar = document.querySelector('#btnFiltrar')
+const btnBorrarFiltro = document.querySelector('#btnBorrarFiltro')
+const loader = document.querySelector('#loader')
+const inputFiltroSexo = document.querySelector('#filtroSexo')
+const inputFiltroEdad = document.querySelector('#filtroEdad')
+
 
 // Funciones
 const renderizarAnimales = (especie) => {
-    especieEnAdopcion = animalesEnAdopcion.filter((animal) => especie.includes(animal.especie))
-    console.log(animalesEnAdopcion)
+    especieEnAdopcion = animalesEnAdopcion.filter((animal) => {
+        let sexo = inputFiltroSexo.value
+        let edad = inputFiltroEdad.value 
+
+        if(edad && sexo) {
+            console.log('AMOBS');
+            return especie.includes(animal.especie) && edad === animal.edad  && sexo === animal.sexo
+
+        } else if(edad && !sexo){
+            console.log('Solo Edad');
+            return especie.includes(animal.especie) && edad === animal.edad
+
+        } else if(!edad && sexo) {
+            return especie.includes(animal.especie) && sexo === animal.sexo
+
+        } else {
+            console.log('ELSE');
+            return especie.includes(animal.especie)
+        }
+        })
     containerCards.innerHTML = ''
+    
     especieEnAdopcion.forEach((animal) => {
         const {id, nombre, pelaje, edad, sexo, comportamiento, especie, img, descripcion} = animal
         const cardAnimal = document.createElement('div')
@@ -74,13 +102,20 @@ const renderizarAnimales = (especie) => {
   
 selectorEspecie.forEach((especie) => {
 especie.addEventListener('click', () => {
-    fetch("../json/data.json")
-    .then((response) => response.json())
-    .then((data) => {animalesEnAdopcion = data
-        renderizarAnimales(especie.textContent.toLocaleLowerCase())})
+    containerCards.innerHTML = ''
+    setTimeout(() => {
 
-    
+        fetch("../json/data.json")
+            .then((response) => response.json())
+            .then((data) => {
+                animalesEnAdopcion = data
+                especieSeleccionada = especie.textContent.toLocaleLowerCase()
+                renderizarAnimales(especieSeleccionada)
+                loader.classList.add('visually-hidden')})
+    }, 3000)
 
+    filtros.classList.remove('visually-hidden')
+    loader.classList.remove('visually-hidden')
 }
 
 )
@@ -88,34 +123,22 @@ especie.addEventListener('click', () => {
 
 const mostrarDatos = () => {
     const animalElegido = JSON.parse(localStorage.getItem("adoptado"))
-    const {id,nombre, pelaje, edad, sexo, comportamiento, especie, img,descripcion } = animalElegido
+    const {nombre, edadDetalle, sexo, edad, pelaje, comportamiento } = animalElegido
     const datosAnimalContainer = document.querySelector("#datosAnimal")
     const datosAnimal = document.createElement('div')
     datosAnimal.innerHTML = `<p class="fs-4"><span class="fw-bold">Nombre:</span> ${nombre}</p>
-    <p class="fs-4"><span class="fw-bold">Edad:</span> ${edad}</p>
-    <p class="fs-4"><span class="fw-bold">Sexo:</span> ${sexo}</p>`
+    <p class="fs-4"><span class="fw-bold">Edad:</span> ${edadDetalle} - ${edad}</p>
+    <p class="fs-4"><span class="fw-bold">Sexo:</span> ${sexo}</p>
+    <p class="fs-4"><span class="fw-bold">Pelaje:</span> ${pelaje}</p>
+    <p class="fs-4"><span class="fw-bold">Comportamiento:</span> ${comportamiento}</p>`
         
     datosAnimalContainer.append(datosAnimal)
 } 
+const form = document.querySelector("#formContrato")       
 
 const validarContrato = () => {
-    btnContrato.addEventListener('click', () => {
-        const edad = document.querySelector("#inputEdad").value        
-        const nombre = document.querySelector("#inputName").value        
-        const telefono = document.querySelector("#inputTel").value        
-        const direccion = document.querySelector("#inputDir").value        
-        const mail = document.querySelector("#inputEmail").value        
-        const form = document.querySelector("#formContrato")       
-        
-
-        if(nombre == '' || telefono == '' || direccion == '' || mail == '' || edad == '') {
-            Swal.fire(
-                'Algo salió mal :(',
-                'Todos los campos son obligatorios. Por favor complete los datos pedidos.',
-                'error')
-                
-            return
-        }
+    form.addEventListener('submit', (e) => {      
+        e.preventDefault()
 
         if(edad >= 18) {
             Swal.fire(
@@ -133,11 +156,9 @@ const validarContrato = () => {
                 'La persona que envíe el pre-contrato y luego firme el contrato debe ser mayor de edad',
                 'error',
             )
-        }             
+        }              
     })
 }
-
-
 
 // Ejecuciones
 
@@ -160,7 +181,37 @@ if(continuarAdopcion && !location.href.includes('contrato.html')) {
       })
 } 
 
+if(location.href.includes('adopciones.html')){
+
+    btnFiltrar.addEventListener('click', () => {renderizarAnimales(especieSeleccionada)})
+
+    btnBorrarFiltro.addEventListener('click', () => {
+        filtros.reset()
+        renderizarAnimales(especieSeleccionada)})
+
+}
+
 if(location.href.includes('contrato.html')){
     validarContrato()
     mostrarDatos()
+
+    btnCancelarAdopcion.addEventListener('click', () => {
+        const nombreAnimalElegido = JSON.parse(localStorage.getItem("adoptado")).nombre
+    
+        Swal.fire({
+            title: `¿Quieres cancelar la adopción de ${nombreAnimalElegido}?`,
+            icon: 'warning',
+            showDenyButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Continuar con la adopción',
+            denyButtonText: 'Cancelar adopción'
+          }).then((result) => {
+            if (result.isDenied) {
+                console.log("LASDLALSD");
+                localStorage.removeItem("adoptado");
+                location.href = "../pages/adopciones.html"
+            }
+          })
+    })
 }
