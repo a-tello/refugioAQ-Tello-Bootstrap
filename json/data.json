@@ -33,7 +33,7 @@
         "especie": "gato",
         "img": "../assets/images/gato3.png",
         "descripcion": "La dejaron en la puerta del refugio, sola. Espera una familia para recibir cariño y jugar mucho.",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "004",
@@ -45,7 +45,7 @@
         "especie": "gato",
         "img": "../assets/images/gato4.png",
         "descripcion": "Lo abandonaron juntos con sus hermanos en una caja. A día de hoy es el único de los 5 que no encontró un hogar y espera poder irse pronto con una familia que lo cuide.",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "005",
@@ -55,45 +55,45 @@
         "sexo": "Hembra",
         "comportamiento": "Puede convivir con otros gatos",
         "especie": "gato",
-        "img": "../assets/images/gato5.jpeg",
+        "img": "../assets/images/gato5(2).jpeg",
         "descripcion": "Susi había logrado encontrar un hogar pero, tristemente, la devolvieron al refugio. Le encanta jugar y disfrutar del sol. Espera ansiosa a alguien que la quiera.",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "006",
         "nombre": "Tiger",
         "pelaje": "Naranja",
-        "edadDetalle": "3 meses",
+        "edadDetalle": "2 meses",
         "sexo": "Macho",
         "comportamiento": "Puede convivir con otros gatos",
         "especie": "gato",
-        "img": "../assets/images/gato5.jpeg",
+        "img": "../assets/images/gato6.jpeg",
         "descripcion": "Es un gato muy inquieto y mucha energia. Le encanta jugar y saltar por todos lados.",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "007",
         "nombre": "Beto",
         "pelaje": "Atigrado",
-        "edadDetalle": "3 meses",
+        "edadDetalle": "1 mes y medio",
         "sexo": "Macho",
         "comportamiento": "Puede convivir con otros gatos",
         "especie": "gato",
         "img": "../assets/images/gato7.jpeg",
         "descripcion": "Lo dejaron en la puerta del refugio, sin comida, sin agua. Hoy está mejor y busca un hogar para poder crecer sano y con mucho amor",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "008",
         "nombre": "Kiza",
         "pelaje": "Blanco, naranja y negro",
-        "edadDetalle": "3 meses",
+        "edadDetalle": "1 mes y medio",
         "sexo": "Hembra",
         "comportamiento": "Puede convivir con otros gatos",
         "especie": "gato",
         "img": "../assets/images/gato4.png",
         "descripcion": "Fue abandonada cerca del refugio. Nuestros voluntarios la rescataron y cuidaron, y hoy, ya está en condiciones para encontrar un hogar",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "009",
@@ -129,7 +129,7 @@
         "especie": "perro",
         "img": "../assets/images/perro3.png",
         "descripcion": "Marco es uno de los 3 hermanitos que llegaron al refugio en una caja de zapatos. Hoy es el único que no se fue y espera por alguien que lo quiera y le de mucho cariño.",
-        "edad": "Bebe"
+        "edad": "Cachorro"
     },
     {
         "id": "012",
@@ -145,9 +145,9 @@
     },
     {
         "id": "013",
-        "nombre": "Tony",
+        "nombre": "Gitana",
         "pelaje": "Marron",
-        "edadDetalle": "3 años",
+        "edadDetalle": "5 años",
         "sexo": "Hembra",
         "comportamiento": "Puede convivir con otros perros",
         "especie": "perro",
@@ -157,9 +157,9 @@
     },
     {
         "id": "014",
-        "nombre": "Tino",
+        "nombre": "Titan",
         "pelaje": "Negro y marron",
-        "edadDetalle": "3 años",
+        "edadDetalle": "9 años",
         "sexo": "Macho",
         "comportamiento": "Puede convivir con otros perros",
         "especie": "perro",
@@ -171,7 +171,7 @@
         "id": "015",
         "nombre": "Gene",
         "pelaje": "Negro y marron",
-        "edadDetalle": "3 años",
+        "edadDetalle": "10 años",
         "sexo": "Hembra",
         "comportamiento": "Puede convivir con otros perros",
         "especie": "perro",
@@ -183,12 +183,12 @@
         "id": "016",
         "nombre": "Pocho",
         "pelaje": "Negro",
-        "edadDetalleDetalle": "3 años",
+        "edadDetalle": "5 meses",
         "sexo": "Macho",
         "comportamiento": "Puede convivir con otros perros",
         "especie": "perro",
         "img": "../assets/images/perro8.jpg",
         "descripcion": "Lo encontramos desorientado cerca de la autopista y no dudamos en rescatarlo. Es un perro muy bueno que le encanta estar acompañado",
-        "edad": "Adulto"
+        "edad": "Cachorro"
     }
 ]
