@@ -96,6 +96,18 @@
         "edad": "Cachorro"
     },
     {
+        "id": "017",
+        "nombre": "Mora",
+        "pelaje": "Blanco y marron",
+        "edadDetalle": "10 años",
+        "sexo": "Hembra",
+        "comportamiento": "Puede convivir con otros gatos",
+        "especie": "gato",
+        "img": "../assets/images/gato9.jpeg",
+        "descripcion": "Mora nos acompaña hace mucho tiempo en el refugio. Muchas veces por ser viejita no la quieren pero ella lo único que necesita es un hogar.",
+        "edad": "Anciano"
+    },
+    {
         "id": "009",
         "nombre": "Milo",
         "pelaje": "Marron",
