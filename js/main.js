@@ -38,7 +38,15 @@ const renderizarAnimales = (especie) => {
             return especie.includes(animal.especie)
         }
         })
-    containerCards.innerHTML = ''
+        containerCards.innerHTML = ''
+
+    if(!especieEnAdopcion.length) {
+        const avisoNoCoincidencias = document.createElement('div')
+        avisoNoCoincidencias.classList.add('fs-2', 'fw-bold', 'm-3')
+        avisoNoCoincidencias.innerText = 'No se encontraron coincidencias para esos filtros :('
+        containerCards.append(avisoNoCoincidencias)
+        return
+    }
     
     especieEnAdopcion.forEach((animal) => {
         const {id, nombre, pelaje, edadDetalle, sexo, comportamiento, especie, img} = animal
